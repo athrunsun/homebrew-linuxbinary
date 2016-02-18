@@ -8,6 +8,6 @@ class Telegram < Formula
     bottle :unneeded
 
     def install
-        bin.install({"Telegram/Telegram" => "telegram"})
+        bin.install({"Telegram" => "telegram"})
     end
 end
