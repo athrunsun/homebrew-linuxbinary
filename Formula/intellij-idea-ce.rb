@@ -8,7 +8,7 @@ class IntellijIDEACommunity < Formula
     bottle :unneeded
 
     def install
-        prefix.install Dir[*]
+        prefix.install Dir["*"]
         bin.install_symlink({"#{prefix}/bin/idea.sh" => "ideac"})
     end
 end
