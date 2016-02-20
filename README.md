@@ -1,6 +1,12 @@
 # Linuxbrew Binaries
 These formulae provide binary installs of software that, for whatever reason, aren't available as source builds in the primary repository.
 
+NOTE:
+
+* Because of a linuxbrew limitation, this repo is named `homebrew-binaries`, not `linuxbrew-binary`.
+> On GitHub, your repository must be named homebrew-something in order to use the one-argument form of brew tap. The prefix 'homebrew-' is not optional.
+* Don't mess this up with homebrew's official [homebrew-binary](https://github.com/Homebrew/homebrew-binary). **This tap is ONLY for linux.**
+
 ## How do I install these formulae?
 `brew install athrunsun/binaries/<formula>`
 
