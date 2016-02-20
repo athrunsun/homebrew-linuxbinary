@@ -1,4 +1,4 @@
-class IntellijIDEA < Formula
+class IntellijIdea < Formula
     desc "The Most Intelligent Java IDE, ultimate edition."
     homepage "http://www.jetbrains.com/idea/"
     version "15.0.3"
