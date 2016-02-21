@@ -14,7 +14,7 @@ class SublimeText < Formula
     bottle :unneeded
 
     def install
-        prefix.install Dir["*"]
-        bin.install_symlink({"#{prefix}/sublime_text" => "subl"})
+        libexec.install Dir["*"]
+        bin.install_symlink({"#{libexec}/sublime_text" => "subl"})
     end
 end

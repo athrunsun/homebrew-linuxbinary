@@ -8,7 +8,7 @@ class DataGrip < Formula
     bottle :unneeded
 
     def install
-        prefix.install Dir["*"]
-        bin.install_symlink({"#{prefix}/bin/datagrip.sh" => "datagrip"})
+        libexec.install Dir["*"]
+        bin.install_symlink({"#{libexec}/bin/datagrip.sh" => "datagrip"})
     end
 end

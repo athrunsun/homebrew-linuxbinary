@@ -8,7 +8,7 @@ class IntellijIdea < Formula
     bottle :unneeded
 
     def install
-        prefix.install Dir["*"]
-        bin.install_symlink({"#{prefix}/bin/idea.sh" => "idea"})
+        libexec.install Dir["*"]
+        bin.install_symlink({"#{libexec}/bin/idea.sh" => "idea"})
     end
 end

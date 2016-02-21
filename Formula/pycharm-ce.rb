@@ -8,7 +8,7 @@ class PyCharmCe < Formula
     bottle :unneeded
 
     def install
-        prefix.install Dir["*"]
-        bin.install_symlink({"#{prefix}/bin/pycharm.sh" => "pycharmc"})
+        libexec.install Dir["*"]
+        bin.install_symlink({"#{libexec}/bin/pycharm.sh" => "pycharmc"})
     end
 end

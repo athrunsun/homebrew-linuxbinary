@@ -14,6 +14,7 @@ class Telegram < Formula
     bottle :unneeded
 
     def install
-        bin.install({"Telegram" => "telegram"})
+        libexec.install Dir["*"]
+        bin.install_symlink({"#{libexec}/Telegram" => "telegram"})
     end
 end

@@ -14,6 +14,7 @@ class ShadowsocksGoLocal < Formula
     bottle :unneeded
 
     def install
-        bin.install({"shadowsocks-local-linux64-#{version}" => "ssgo_local"})
+        libexec.install Dir["*"]
+        bin.install({"#{libexec}/shadowsocks-local-linux64-#{version}" => "ssgo_local"})
     end
 end
