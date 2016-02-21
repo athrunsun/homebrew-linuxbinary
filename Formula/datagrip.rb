@@ -1,4 +1,4 @@
-class DataGrip < Formula
+class Datagrip < Formula
     desc "Your Swiss Army Knife for Databases and SQL."
     homepage "http://www.jetbrains.com/datagrip/"
     version "1.0.3"

@@ -1,4 +1,4 @@
-class PyCharm < Formula
+class Pycharm < Formula
     desc "Python IDE for Professional Developers, professional edition."
     homepage "http://www.jetbrains.com/pycharm/"
     version "5.0.4"
