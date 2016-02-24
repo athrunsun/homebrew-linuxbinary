@@ -12,6 +12,7 @@ class GoBinary < Formula
     end
 
     bottle :unneeded
+    conflicts_with "go"
 
     def install
         libexec.install Dir["*"]
