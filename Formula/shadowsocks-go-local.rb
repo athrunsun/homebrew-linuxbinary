@@ -15,6 +15,11 @@ class ShadowsocksGoLocal < Formula
 
     def install
         libexec.install Dir["*"]
-        bin.install({"#{libexec}/shadowsocks-local-linux64-#{version}" => "ssgo_local"})
+
+        if MacOS.prefer_64_bit?
+            bin.install({"#{libexec}/shadowsocks-local-linux64-#{version}" => "ssgo_local"})
+        else
+            bin.install({"#{libexec}/shadowsocks-local-linux32-#{version}" => "ssgo_local"})
+        end
     end
 end
