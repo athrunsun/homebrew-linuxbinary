@@ -1,5 +1,5 @@
 # Linuxbrew Binaries
-These formulae provide binary installs of software that, for whatever reason, aren't available as source builds in the primary repository.
+These formulae provide binary installs of software that, for whatever reason, aren't available or outdated in the package manager of your linux distro.
 
 NOTE:
 
