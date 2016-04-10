@@ -5,10 +5,10 @@ class Telegram < Formula
 
     if MacOS.prefer_64_bit?
         url "https://updates.tdesktop.com/tlinux/tsetup.#{version}.tar.xz"
-        sha256 "9efdc91a8a2fce729f32508c5c6b4d9b120b89a45fef800a3bab223325e536ce"
+        sha256 "f21947f3e486bd93a053b1aa00821dd419a431ca38ca798b4f5f6f6f33597a54"
     else
         url "https://updates.tdesktop.com/tlinux32/tsetup32.#{version}.tar.xz"
-        sha256 "b4f903e634132fe489187486f6c8917b62d26bac746353696ac7381ebc4fed3d"
+        sha256 "3b4c1b0744d8aa66c141a0d8cb97093a624e9a61906ffbd62b65cc6fa70efd81"
     end
 
     bottle :unneeded
