@@ -1,14 +1,14 @@
 class FfmpegBinary < Formula
     desc "FFmpeg Static Builds."
     homepage "http://johnvansickle.com/ffmpeg/"
-    version "3.0"
+    version "3.0.2"
 
     if MacOS.prefer_64_bit?
         url "http://johnvansickle.com/ffmpeg/releases/ffmpeg-release-64bit-static.tar.xz"
-        sha256 "c1b299502311c70a607e63bbbb928a1f5093fa9301e5add4f8fb319044c1a864"
+        sha256 "30cbe47c9b76a8c466be1684f1c51ca76787f989ac29c5b6b5db39c4eb253eae"
     else
         url "http://johnvansickle.com/ffmpeg/releases/ffmpeg-release-32bit-static.tar.xz"
-        sha256 "14b878161346789936c708f7c818193f9fd6a046ff35d909d326711d6ec74b34"
+        sha256 "b6687383307db8bdc298974436724a7a3e93e874f0bb7f00acae97fba467ff74"
     end
 
     bottle :unneeded
