@@ -20,5 +20,8 @@ Or install via URL (which will not receive updates):
 brew install https://raw.githubusercontent.com/athrunsun/homebrew-linuxbinary/master/Formula/<formula>.rb
 ```
 
+## Suggestion
+For jetbrans softwares (intellij-idea, pycharm, datagrip, etc.), if it's a minor upgrade (2016.1 => 2016.1.2), you don't need to download the newer version (which is far larger than a patch) from this tap, instead, just check update and download the patch and apply it inside the software itself.
+
 ## Documentation
 `brew help`, `man brew` or check [Linuxbrew's documentation](https://github.com/Linuxbrew/linuxbrew/tree/master/share/doc/homebrew#readme).
