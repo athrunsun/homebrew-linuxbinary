@@ -22,7 +22,7 @@ class Teamviewer < Formula
     def caveats; <<-EOS.undent
         Teamviewer is a 32-bit software, so if you want to use it 
         in a 64-bit system, you have to install 32-bit shared libraries
-        like dbus otherwise you may eccounter errors like:
+        like dbus based on the linux distro you use otherwise you may eccounter errors like:
             "Cannot open shared object file: No such file or directory"
         EOS
     end
