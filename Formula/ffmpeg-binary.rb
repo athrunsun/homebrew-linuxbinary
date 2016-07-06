@@ -1,7 +1,7 @@
 class FfmpegBinary < Formula
     desc "FFmpeg Static Builds."
     homepage "http://johnvansickle.com/ffmpeg/"
-    version "3.0.2"
+    version "3.1.1"
 
     if MacOS.prefer_64_bit?
         url "http://johnvansickle.com/ffmpeg/releases/ffmpeg-release-64bit-static.tar.xz"
