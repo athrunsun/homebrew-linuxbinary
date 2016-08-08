@@ -1,14 +1,14 @@
 class ShadowsocksGoLocal < Formula
     desc "Go port of shadowsocks, client binary."
     homepage "https://github.com/shadowsocks/shadowsocks-go"
-    version "1.1.4"
+    version "1.1.5"
 
     if MacOS.prefer_64_bit?
-        url "http://dl.chenyufei.info/shadowsocks/#{version}/shadowsocks-local-linux64-#{version}.gz"
-        sha256 "6b8dd8405070848c1c3233284ff0ebab91e34e2073efe28bcb3063506ed7b9c1"
+        url "https://github.com/shadowsocks/shadowsocks-go/releases/download/#{version}/shadowsocks-local-linux64-#{version}.gz"
+        sha256 "3d7c6a0af87e6d214faff93aa46ae989d5534b6b9f01474fd3538c9a2559dd64"
     else
-        url "http://dl.chenyufei.info/shadowsocks/#{version}/shadowsocks-local-linux32-#{version}.gz"
-        sha256 "5c31f12e2d2e4545e349910504fb84868f98a37a668478b68a7b28e862e2c05b"
+        url "https://github.com/shadowsocks/shadowsocks-go/releases/download/#{version}/shadowsocks-local-linux32-#{version}.gz"
+        sha256 "6485dbb7b65965844d0a676673afdf2dbbae92e284fd61d68a4e4894ff36b07e"
     end
 
     bottle :unneeded
