@@ -21,7 +21,7 @@ brew install https://raw.githubusercontent.com/athrunsun/homebrew-linuxbinary/ma
 ```
 
 ## Suggestion
-For jetbrans softwares (intellij-idea, pycharm, datagrip, etc.), if it's a minor upgrade (2016.1 => 2016.1.2), you don't need to download the newer version (which is far larger than a patch) from this tap, instead, just check update and download the patch and apply it inside the software itself.
+For jetbrans softwares (intellij-idea, pycharm, datagrip, etc.), if it's a minor upgrade (2016.1 => 2016.1.2), you don't need to download the newer version with `brew` (which is much larger than a patch) from this tap, instead, just check update then download and apply the patch.
 
 ## Documentation
 `brew help`, `man brew` or check [Linuxbrew's documentation](https://github.com/Linuxbrew/linuxbrew/tree/master/share/doc/homebrew#readme).
