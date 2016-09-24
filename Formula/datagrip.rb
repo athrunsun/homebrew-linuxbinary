@@ -1,9 +1,9 @@
 class Datagrip < Formula
     desc "Your Swiss Army Knife for Databases and SQL."
     homepage "http://www.jetbrains.com/datagrip/"
-    version "2016.1"
+    version "2016.2.4"
     url "https://download.jetbrains.com/datagrip/datagrip-#{version}.tar.gz"
-    sha256 "9bd8a78ff5ad8344dbd111bf3a48a277f71fd8a8347d3fb9a1c09af4320eb9e3"
+    sha256 "d54f5d16830e80761cc52398e9ba2762ec30f23564f7593125951f23556b9128"
 
     bottle :unneeded
 
