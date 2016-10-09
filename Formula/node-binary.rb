@@ -1,14 +1,14 @@
 class NodeBinary < Formula
     desc "Platform built on the V8 JavaScript runtime to build network applications, binaries installation."
     homepage "https://nodejs.org/"
-    version "v5.6.0"
+    version "v6.7.0"
 
     if MacOS.prefer_64_bit?
         url "https://nodejs.org/dist/#{version}/node-#{version}-linux-x64.tar.xz"
-        sha256 "d72e4e264c4a9da6a4fe631f376e84d5a9c1fd0a2eea7514f3e4c1736915b394"
+        sha256 "09263a844c31933c6f31e576e580faf01d3bbb056efb8713388dc8d09674f8c2"
     else
         url "https://nodejs.org/dist/#{version}/node-#{version}-linux-x86.tar.xz"
-        sha256 "a22fe4ab92958e40fda35ec2bc3a0a10b2c56e1ccbc1a0dea8b642e39725fb71"
+        sha256 "e89a77020bd579186adbc46f6a668d3524f980c5fc75f63e1d5b5362423bcebb"
     end
 
     bottle :unneeded
