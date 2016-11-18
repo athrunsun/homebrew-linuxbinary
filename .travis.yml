@@ -1,8 +1,7 @@
 language: ruby
 
 env:
-- LINUXBREW_HOME=$HOME/.linuxbrew
-- PATH=$LINUXBREW_HOME/bin:$PATH
+    - LINUXBREW_HOME=$HOME/.linuxbrew PATH=$LINUXBREW_HOME/bin:$PATH
 
 rvm:
     - 2.2
