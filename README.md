@@ -1,4 +1,4 @@
-# Linuxbrew Binaries [![Build Status](https://travis-ci.org/athrunsun/homebrew-linuxbinary.svg?branch=master)](https://travis-ci.org/athrunsun/homebrew-linuxbinary)
+# Linuxbrew Binaries
 These formulae provide binary installs of software that, for whatever reason, aren't available or outdated in the package manager of your linux distro.
 
 NOTE:
