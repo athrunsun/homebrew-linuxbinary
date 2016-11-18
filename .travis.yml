@@ -1,8 +1,8 @@
 language: ruby
 
 env:
-    - LINUXBREW_HOME=$HOME/.linuxbrew
-    - PATH=$LINUXBREW_HOME/bin:$PATH
+- LINUXBREW_HOME=$HOME/.linuxbrew
+- PATH=$LINUXBREW_HOME/bin:$PATH
 
 rvm:
     - 2.2
@@ -11,8 +11,11 @@ branches:
     only:
         - master
 
+before_install:
+    - "sudo apt-get -qq update"
+    - "sudo apt-get install -y build-essential curl git python-setuptools"
+
 install:
-    - "apt-get install -y build-essential curl git python-setuptools"
     - "git clone https://github.com/Linuxbrew/brew.git $LINUXBREW_HOME"
     - "brew update"
 
