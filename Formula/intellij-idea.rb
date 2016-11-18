@@ -1,9 +1,9 @@
 class IntellijIdea < Formula
     desc "The Most Intelligent Java IDE, ultimate edition."
     homepage "http://www.jetbrains.com/idea/"
-    version "2016.2.4"
+    version "2016.2.5"
     url "https://download.jetbrains.com/idea/ideaIU-#{version}.tar.gz"
-    sha256 "f940fb9fa356e28351dd99cf2612c967d173e4413b66c0452ee8fa651b64b698"
+    sha256 "30a4ddf82b8393fc22803c9335d6cb00087116dd09915e44f40f0433b81b1b3d"
 
     bottle :unneeded
 
