@@ -1,14 +1,26 @@
 class NodeBinary < Formula
     desc "Platform built on the V8 JavaScript runtime to build network applications, binaries installation."
     homepage "https://nodejs.org/"
-    version "v6.7.0"
+    version "7.1.0"
+
+    option "with-taobao-mirror", "Download tarball from https://npm.taobao.org/mirrors/node/, use this option if you're in mainland China for a faster downloading speed."
 
     if MacOS.prefer_64_bit?
-        url "https://nodejs.org/dist/#{version}/node-#{version}-linux-x64.tar.xz"
-        sha256 "09263a844c31933c6f31e576e580faf01d3bbb056efb8713388dc8d09674f8c2"
+        if build.with? "taobao-mirror"
+            url "https://npm.taobao.org/mirrors/node/v#{version}/node-v#{version}-linux-x64.tar.xz"
+        else
+            url "https://nodejs.org/dist/v#{version}/node-v#{version}-linux-x64.tar.xz"
+        end
+
+        sha256 "312f24d410e60f805db927d31d3b4547f69f88f4b2176c2eeca2f042f33624ce"
     else
-        url "https://nodejs.org/dist/#{version}/node-#{version}-linux-x86.tar.xz"
-        sha256 "e89a77020bd579186adbc46f6a668d3524f980c5fc75f63e1d5b5362423bcebb"
+        if build.with? "taobao-mirror"
+            url "https://npm.taobao.org/mirrors/node/v#{version}/node-v#{version}-linux-x86.tar.xz"
+        else
+            url "https://nodejs.org/dist/v#{version}/node-v#{version}-linux-x86.tar.xz"
+        end
+
+        sha256 "310252fc6295a387e3172efad2efebbd9e32b3eba137d2ee314cbd7f3238e110"
     end
 
     bottle :unneeded
