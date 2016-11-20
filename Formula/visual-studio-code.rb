@@ -15,6 +15,6 @@ class VisualStudioCode < Formula
 
     def install
         libexec.install Dir["*"]
-        bin.install_symlink({"#{libexec}/code" => "code"})
+        bin.install_symlink({"#{libexec}/bin/code" => "code"})
     end
 end
