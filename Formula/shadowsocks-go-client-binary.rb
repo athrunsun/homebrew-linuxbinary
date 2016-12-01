@@ -1,4 +1,4 @@
-class ShadowsocksGoLocal < Formula
+class ShadowsocksGoClientBinary < Formula
     desc "Go port of shadowsocks, client binary."
     homepage "https://github.com/shadowsocks/shadowsocks-go"
     version "1.1.5"
