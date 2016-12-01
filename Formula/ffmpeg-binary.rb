@@ -1,18 +1,28 @@
 class FfmpegBinary < Formula
     desc "FFmpeg Static Builds."
-    homepage "http://johnvansickle.com/ffmpeg/"
-    version "3.1.1"
+    homepage "https://www.johnvansickle.com/ffmpeg/"
+    version "3.2"
 
     if MacOS.prefer_64_bit?
-        url "http://johnvansickle.com/ffmpeg/releases/ffmpeg-release-64bit-static.tar.xz"
-        sha256 "30cbe47c9b76a8c466be1684f1c51ca76787f989ac29c5b6b5db39c4eb253eae"
+        url "https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-64bit-static.tar.xz"
+        sha256 "b5392ef2ec8909d2fb9d8dbd551ba3d5929511b0f7058f560fe3db13896777ca"
     else
-        url "http://johnvansickle.com/ffmpeg/releases/ffmpeg-release-32bit-static.tar.xz"
-        sha256 "b6687383307db8bdc298974436724a7a3e93e874f0bb7f00acae97fba467ff74"
+        url "https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-32bit-static.tar.xz"
+        sha256 "fa264a2d8524b488434313abab072302df3f7dc2e05dffb9014349e43f42b344"
     end
 
     bottle :unneeded
     conflicts_with "ffmpeg"
+
+    devel do
+        if MacOS.prefer_64_bit?
+            url "https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-64bit-static.tar.xz"
+            sha256 "689fddb8cb34827a1574dd35ead2edb7ebd7d3dc8464cadeecfae4bdbc8c4cf1"
+        else
+            url "https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-32bit-static.tar.xz"
+            sha256 "e1a4cca873d547e538057685399beee6ef1a4713190a4acec6746056fa80d5a4"
+        end
+    end
 
     def install
         libexec.install Dir["*"]
