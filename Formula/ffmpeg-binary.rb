@@ -17,7 +17,7 @@ class FfmpegBinary < Formula
     devel do
         if MacOS.prefer_64_bit?
             url "https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-64bit-static.tar.xz"
-            sha256 "689fddb8cb34827a1574dd35ead2edb7ebd7d3dc8464cadeecfae4bdbc8c4cf1"
+            sha256 "49b4d18ad85bfb05c827c3ca1bef5a9c2b5db890f137a09a8582e11224fc6b2a"
         else
             url "https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-32bit-static.tar.xz"
             sha256 "e1a4cca873d547e538057685399beee6ef1a4713190a4acec6746056fa80d5a4"
