@@ -1,7 +1,7 @@
 class TigerVncBinary < Formula
     desc "High performance, multi-platform VNC client and server."
     homepage "https://github.com/TigerVNC/tigervnc"
-    version 1.7.0
+    version "1.7.0"
 
     if MacOS.prefer_64_bit?
         url "https://bintray.com/tigervnc/stable/download_file?file_path=tigervnc-#{version}.x86_64.tar.gz"
