@@ -1,14 +1,14 @@
 class Lantern < Formula
     desc "Lantern is a free application that delivers fast, reliable and secure access to the open Internet."
     homepage "https://getlantern.org/"
-    version "2.2.5"
+    version "3.5.9"
 
     if MacOS.prefer_64_bit?
         url "https://github.com/getlantern/lantern/releases/download/#{version}/update_linux_amd64.bz2"
-        sha256 "6520d25bb049d038f7e0dc9944eac75569592114f92a22836092353c810617bb"
+        sha256 "0f8a73f50470aae79f3ca4db4af4974e11ab89780a808261d34cffaabd8a025b"
     else
         url "https://github.com/getlantern/lantern/releases/download/#{version}/update_linux_386.bz2"
-        sha256 "da09c9650541402ceab990d73fd61f0589324f37055e4c159f7ad11760fdf1ab"
+        sha256 "e4cd95dc0523ef6a2989ac15bd1a238d3ce4f4165e8f3e2333d033c40cac6be1"
     end
 
     bottle :unneeded
