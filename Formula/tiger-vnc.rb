@@ -1,4 +1,4 @@
-class TigerVncBinary < Formula
+class TigerVnc < Formula
     desc "High performance, multi-platform VNC client and server."
     homepage "https://github.com/TigerVNC/tigervnc"
     version "1.7.0"
@@ -15,11 +15,6 @@ class TigerVncBinary < Formula
 
     def install
         libexec.install Dir["*"]
-        bin.install_symlink("#{libexec}/usr/bin/vncconfig")
-        bin.install_symlink("#{libexec}/usr/bin/vncpasswd")
-        bin.install_symlink("#{libexec}/usr/bin/vncserver")
-        bin.install_symlink("#{libexec}/usr/bin/vncviewer")
-        bin.install_symlink("#{libexec}/usr/bin/x0vncserver")
-        bin.install_symlink("#{libexec}/usr/bin/Xvnc")
+        bin.install_symlink("#{libexec}/usr/bin/*")
     end
 end
