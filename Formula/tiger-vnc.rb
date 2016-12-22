@@ -15,6 +15,6 @@ class TigerVnc < Formula
 
     def install
         libexec.install Dir["*"]
-        bin.install_symlink("#{libexec}/usr/bin/*")
+        bin.install_symlink Dir["#{libexec}/usr/bin/*"]
     end
 end
