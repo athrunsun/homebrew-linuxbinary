@@ -1,4 +1,4 @@
-class NodeBinary < Formula
+class NodeBinaryLts < Formula
     desc "Platform built on the V8 JavaScript runtime to build network applications, binaries installation. This is the LTS version and is recommended for most users."
     homepage "https://nodejs.org/"
     version "6.9.2"
