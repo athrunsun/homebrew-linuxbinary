@@ -1,14 +1,14 @@
 class GoBinary < Formula
     desc "Go programming environment, binary installation."
     homepage "https://golang.org"
-    version "1.7.3"
+    version "1.7.5"
 
     if MacOS.prefer_64_bit?
         url "https://storage.googleapis.com/golang/go#{version}.linux-amd64.tar.gz"
-        sha256 "508028aac0654e993564b6e2014bf2d4a9751e3b286661b0b0040046cf18028e"
+        sha256 "2e4dd6c44f0693bef4e7b46cc701513d74c3cc44f2419bf519d7868b12931ac3"
     else
         url "https://storage.googleapis.com/golang/go#{version}.linux-386.tar.gz"
-        sha256 "d39d562c3247b11ae659afe1e131a3287c60b7de207ca5f25684c26f1c1dff5c"
+        sha256 "432cb92ae656f6fe1fa96a981782ef5948438b6da6691423aae900918b1eb955"
     end
 
     bottle :unneeded

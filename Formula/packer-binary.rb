@@ -1,14 +1,14 @@
 class PackerBinary < Formula
     desc "Packer is a tool for creating machine and container images for multiple platforms from a single source configuration."
     homepage "https://www.packer.io/"
-    version "0.10.1"
+    version "0.12.2"
 
     if MacOS.prefer_64_bit?
         url "https://releases.hashicorp.com/packer/#{version}/packer_#{version}_linux_amd64.zip"
-        sha256 "7d51fc5db19d02bbf32278a8116830fae33a3f9bd4440a58d23ad7c863e92e28"
+        sha256 "035d0ea1fe785ab6b673bc2a79399125d4014f29151e106635fa818bb726bebf"
     else
         url "https://releases.hashicorp.com/packer/#{version}/packer_#{version}_linux_386.zip"
-        sha256 "9146b94115684a9725b2c1b5e5fbc412f30caaca136dbad4028423d6d6d3b6e4"
+        sha256 "458e63a74104e3e550181f5cf2a20f29d79e326c518bcb5723399d4e56ff3f20"
     end
 
     bottle :unneeded
