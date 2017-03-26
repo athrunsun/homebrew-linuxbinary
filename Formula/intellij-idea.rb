@@ -11,4 +11,9 @@ class IntellijIdea < Formula
         libexec.install Dir["*"]
         bin.install_symlink({"#{libexec}/bin/idea.sh" => "idea"})
     end
+
+    def caveats; <<-EOS.undent
+        Executable is linked as "idea".
+        EOS
+    end
 end

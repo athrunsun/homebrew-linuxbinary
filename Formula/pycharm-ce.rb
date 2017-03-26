@@ -11,4 +11,9 @@ class PycharmCe < Formula
         libexec.install Dir["*"]
         bin.install_symlink({"#{libexec}/bin/pycharm.sh" => "pycharmc"})
     end
+
+    def caveats; <<-EOS.undent
+        Executable is linked as "pycharmc".
+        EOS
+    end
 end

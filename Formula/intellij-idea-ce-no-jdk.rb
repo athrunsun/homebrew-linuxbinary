@@ -9,6 +9,11 @@ class IntellijIdeaCeNoJdk < Formula
 
     def install
         libexec.install Dir["*"]
-        bin.install_symlink({"#{libexec}/bin/idea.sh" => "ideac"})
+        bin.install_symlink({"#{libexec}/bin/idea.sh" => "ideacn"})
+    end
+
+    def caveats; <<-EOS.undent
+        Executable is linked as "ideacn" so that it doesn't conflict with intellij-idea-ce.
+        EOS
     end
 end
