@@ -1,9 +1,9 @@
 class PycharmCe < Formula
     desc "Python IDE for Professional Developers, community edition."
     homepage "http://www.jetbrains.com/pycharm/"
-    version "2016.3.2"
+    version "2017.1"
     url "https://download.jetbrains.com/python/pycharm-community-#{version}.tar.gz"
-    sha256 "e1092d3692118f9097e4182edfccc76159160353b7d7379cada3249b9e2d4f39"
+    sha256 "6669120b68873a0bcb7faf179ea79f7c2dd7eac34d377d1f574724604b70e692"
 
     bottle :unneeded
 
