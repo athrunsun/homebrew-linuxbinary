@@ -1,7 +1,7 @@
 class Atom < Formula
     desc "A hackable text editor for the 21st Century."
     homepage "https://atom.io/"
-    version "1.12.6"
+    version "1.17.2"
     
     option "with-taobao-mirror", "Download tarball from https://npm.taobao.org/mirrors/atom/, use this option if you're in mainland China for a faster downloading speed."
     
@@ -11,7 +11,7 @@ class Atom < Formula
         url "https://github.com/atom/atom/releases/download/v#{version}/atom-amd64.tar.gz"
     end
 
-    sha256 "2fcf0d2392b2ef034366bebcd45a96762759b16d62dca1c44a661979742d2283"
+    sha256 "5b57470d9fbabb0ba8215a4e18b0a42a2cb5290dc6a4cd19fffab3f0cfa0e9a5"
 
     bottle :unneeded
 
