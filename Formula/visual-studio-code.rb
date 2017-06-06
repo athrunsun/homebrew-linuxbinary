@@ -1,14 +1,14 @@
 class VisualStudioCode < Formula
     desc "VS Code is a new type of tool that combines the simplicity of a code editor with what developers need for their core edit-build-debug cycle."
     homepage "https://code.visualstudio.com/"
-    version "1.7"
+    version "1.12.2"
 
     if MacOS.prefer_64_bit?
-        url "https://az764295.vo.msecnd.net/stable/02611b40b24c9df2726ad8b33f5ef5f67ac30b44/code-stable-code_1.7.1-1478180561_amd64.tar.gz"
-        sha256 "af7f110749a37233df574307d4f3847612a918c3d4baf46671961536854cd840"
+        url "https://az764295.vo.msecnd.net/stable/19222cdc84ce72202478ba1cec5cb557b71163de/code-stable-code_1.12.2-1494422229_amd64.tar.gz"
+        sha256 "3ac5de1a12c44e3f45a7c16df8977e99809697f3259715a94996d2c4a898cc5c"
     else
-        url "https://az764295.vo.msecnd.net/stable/02611b40b24c9df2726ad8b33f5ef5f67ac30b44/code-stable-code_1.7.1-1478181356_i386.tar.gz"
-        sha256 "9de3494c55fa2a37b599a4c5ec43cf4e1342095e64150cca21a03e42f5bbf6e2"
+        url "https://az764295.vo.msecnd.net/stable/19222cdc84ce72202478ba1cec5cb557b71163de/code-stable-code_1.12.2-1494423350_i386.tar.gz"
+        sha256 "d309cd9e809d4328d489a9d43897a47b28ffce30754e1e46c60a8ad137d24108"
     end
 
     bottle :unneeded
