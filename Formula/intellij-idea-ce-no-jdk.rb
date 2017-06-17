@@ -1,9 +1,9 @@
 class IntellijIdeaCeNoJdk < Formula
     desc "The Most Intelligent Java IDE, community edition (without bundled JDK)."
     homepage "http://www.jetbrains.com/idea/"
-    version "2017.1"
+    version "2017.1.4"
     url "https://download.jetbrains.com/idea/ideaIC-#{version}-no-jdk.tar.gz"
-    sha256 "b3fb17b3c6ed52df07c33bbe2a1b7fc0ca84c1e492e986c8707f57425ef76513"
+    sha256 "ea90fce3f93c4eaa58036278f630a0545ae0b191fa3bff48f480f2b268867cb0"
 
     bottle :unneeded
 

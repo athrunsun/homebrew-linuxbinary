@@ -1,9 +1,9 @@
 class Webstorm < Formula
     desc "The smartest JavaScript IDE."
     homepage "http://www.jetbrains.com/webstorm/"
-    version "2016.3.2"
+    version "2017.1.4"
     url "https://download.jetbrains.com/webstorm/WebStorm-#{version}.tar.gz"
-    sha256 "762bb8e5147f05e695fd3be70dea7cc816fca396b8510159b2884810da9673c0"
+    sha256 "f50b5cf70a0566976313c31530c20093ef526746ff4d27ec2e5adbc99138822b"
 
     bottle :unneeded
 
