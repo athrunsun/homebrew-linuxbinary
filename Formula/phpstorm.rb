@@ -1,9 +1,9 @@
 class Phpstorm < Formula
     desc "Lightning-smart PHP IDE"
     homepage "http://www.jetbrains.com/phpstorm/"
-    version "2016.3.2"
+    version "2017.1.4"
     url "https://download.jetbrains.com/webide/PhpStorm-#{version}.tar.gz"
-    sha256 "45b968f5fd0104945f0383a4c0aff7e2dc3e44185e995d19bc52c61aec85d417"
+    sha256 "4ed12e9c486dd2ab729426feae9fa056b32eca39225b6d0ae4cd7cfbe3672b7f"
 
     bottle :unneeded
 
