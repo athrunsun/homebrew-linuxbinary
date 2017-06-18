@@ -1,14 +1,14 @@
 class DbeaverEe < Formula
     desc "Free multi-platform database tool for developers, SQL programmers, database administrators and analysts. Supports all popular databases: MySQL, PostgreSQL, SQLite, Oracle, DB2, SQL Server, Sybase, MongoDB, etc."
     homepage "http://dbeaver.jkiss.org/"
-    version "3.8.5"
+    version "4.0.5"
 
     if MacOS.prefer_64_bit?
         url "http://dbeaver.jkiss.org/files/#{version}/dbeaver-ee-#{version}-linux.gtk.x86_64.tar.gz"
-        sha256 "72c34dfc11918a3e758eeda699175cdabc903fd69874346e9f225af93c32744a"
+        sha256 "a337d6640804add109d28bbc8b1f7b8d10b2326e1f06fccfb7e8fa429121f7eb"
     else
         url "http://dbeaver.jkiss.org/files/#{version}/dbeaver-ee-#{version}-linux.gtk.x86.tar.gz"
-        sha256 "298ff1244b02ac298b36f355a0c40a81137a7d6d4b874325640709a77a1db81b"
+        sha256 "19fc544a27d176e806d46096d28d5a5b083f29eadaa90323f4ac1f141b5b5e49"
     end
 
     bottle :unneeded

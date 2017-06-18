@@ -1,14 +1,14 @@
 class DbeaverCe < Formula
     desc "Free multi-platform database tool for developers, SQL programmers, database administrators and analysts. Supports any database which has JDBC driver (which basically means - ANY database)."
     homepage "http://dbeaver.jkiss.org/"
-    version "4.0.2"
+    version "4.0.8"
 
     if MacOS.prefer_64_bit?
         url "http://dbeaver.jkiss.org/files/#{version}/dbeaver-ce-#{version}-linux.gtk.x86_64.tar.gz"
-        sha256 "9122b527436022266f2e951a7bca845995eb7f1a1e7c89c30ae634462a11ae4c"
+        sha256 "61a123c25ef87425adfabdbab0c9385c23dc407027c55ad538970efd82eec77a"
     else
         url "http://dbeaver.jkiss.org/files/#{version}/dbeaver-ce-#{version}-linux.gtk.x86.tar.gz"
-        sha256 "f1285f4630953514c10923d6e4799cc7eec2e049e57dd8263ce88d10c0d99431"
+        sha256 "bb62c7db1d0f86309888389c9dc2e52c7362ddb52e48b6cf3d8fc496400b4ffe"
     end
 
     bottle :unneeded
