@@ -9,6 +9,11 @@ class Phpstorm < Formula
 
     def install
         libexec.install Dir["*"]
-        bin.install_symlink({"#{libexec}/bin/phpstorm.sh" => "phpstorm"})
+        bin.install_symlink("#{libexec}/bin/phpstorm.sh" => "phpstorm")
+    end
+
+    def caveats; <<-EOS.undent
+        Executable is linked as "phpstorm".
+        EOS
     end
 end

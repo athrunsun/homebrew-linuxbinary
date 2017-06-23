@@ -1,6 +1,6 @@
 class PgwebBinary < Formula
     desc "Cross-platform client for PostgreSQL databases, binary installation."
-    homepage "http://sosedoff.github.io/pgweb"
+    homepage "https://sosedoff.github.io/pgweb"
     version "0.9.6"
 
     if MacOS.prefer_64_bit?
@@ -17,9 +17,9 @@ class PgwebBinary < Formula
         libexec.install Dir["*"]
 
         if MacOS.prefer_64_bit?
-            bin.install_symlink({"#{libexec}/pgweb_linux_amd64" => "pgweb"})
+            bin.install_symlink("#{libexec}/pgweb_linux_amd64" => "pgweb")
         else
-            bin.install_symlink({"#{libexec}/pgweb_linux_386" => "pgweb"})
+            bin.install_symlink("#{libexec}/pgweb_linux_386" => "pgweb")
         end
     end
 end

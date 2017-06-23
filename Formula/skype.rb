@@ -10,6 +10,6 @@ class Skype < Formula
 
     def install
         libexec.install Dir["*"]
-        bin.install_symlink({"#{libexec}/skype" => "skype"})
+        bin.install_symlink("#{libexec}/skype")
     end
 end

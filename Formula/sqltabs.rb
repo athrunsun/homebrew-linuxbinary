@@ -10,7 +10,7 @@ class Sqltabs < Formula
 
     def install
         libexec.install Dir["*"]
-        bin.install_symlink({"#{libexec}/sqltabs" => "sqltabs"})
+        bin.install_symlink("#{libexec}/sqltabs")
     end
 
     def caveats; <<-EOS.undent

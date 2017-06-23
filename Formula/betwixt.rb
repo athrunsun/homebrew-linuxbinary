@@ -15,6 +15,6 @@ class Betwixt < Formula
 
     def install
         libexec.install Dir["*"]
-        bin.install_symlink({"#{libexec}/Betwixt" => "betwixt"})
+        bin.install_symlink("#{libexec}/Betwixt" => "betwixt")
     end
 end

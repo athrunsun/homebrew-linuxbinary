@@ -9,7 +9,7 @@ class JetbrainsToolbox < Formula
 
     def install
         libexec.install Dir["*"]
-        bin.install_symlink({"#{libexec}/jetbrains-toolbox" => "jbtool"})
+        bin.install_symlink("#{libexec}/jetbrains-toolbox" => "jbtool")
     end
 
     def caveats; <<-EOS.undent

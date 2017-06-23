@@ -17,9 +17,9 @@ class ShadowsocksGoServerBinary < Formula
         libexec.install Dir["*"]
 
         if MacOS.prefer_64_bit?
-            bin.install({"#{libexec}/shadowsocks-server-linux64-#{version}" => "ssgo_server"})
+            bin.install("#{libexec}/shadowsocks-server-linux64-#{version}" => "ssgo_server")
         else
-            bin.install({"#{libexec}/shadowsocks-server-linux32-#{version}" => "ssgo_server"})
+            bin.install("#{libexec}/shadowsocks-server-linux32-#{version}" => "ssgo_server")
         end
     end
 end

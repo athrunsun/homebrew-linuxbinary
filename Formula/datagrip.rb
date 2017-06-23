@@ -9,7 +9,7 @@ class Datagrip < Formula
 
     def install
         libexec.install Dir["*"]
-        bin.install_symlink({"#{libexec}/bin/datagrip.sh" => "datagrip"})
+        bin.install_symlink("#{libexec}/bin/datagrip.sh" => "datagrip")
     end
 
     def caveats; <<-EOS.undent

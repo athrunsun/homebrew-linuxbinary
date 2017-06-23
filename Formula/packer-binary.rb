@@ -15,6 +15,6 @@ class PackerBinary < Formula
 
     def install
         libexec.install Dir["*"]
-        bin.install_symlink({"#{libexec}/packer" => "packer"})
+        bin.install_symlink("#{libexec}/packer")
     end
 end

@@ -9,6 +9,11 @@ class Webstorm < Formula
 
     def install
         libexec.install Dir["*"]
-        bin.install_symlink({"#{libexec}/bin/webstorm.sh" => "webstorm"})
+        bin.install_symlink("#{libexec}/bin/webstorm.sh" => "webstorm")
+    end
+
+    def caveats; <<-EOS.undent
+        Executable is linked as "webstorm".
+        EOS
     end
 end

@@ -15,6 +15,6 @@ class EclipseJee < Formula
 
     def install
         libexec.install Dir["*"]
-        bin.install_symlink({"#{libexec}/eclipse" => "eclipse"})
+        bin.install_symlink("#{libexec}/eclipse" => "eclipse")
     end
 end

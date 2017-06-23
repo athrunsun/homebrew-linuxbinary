@@ -9,6 +9,6 @@ class Smartgit < Formula
 
     def install
         libexec.install Dir["*"]
-        bin.install_symlink({"#{libexec}/bin/smartgit.sh" => "smartgit"})
+        bin.install_symlink("#{libexec}/bin/smartgit.sh" => "smartgit")
     end
 end

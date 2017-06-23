@@ -9,7 +9,7 @@ class IntellijIdeaCeNoJdk < Formula
 
     def install
         libexec.install Dir["*"]
-        bin.install_symlink({"#{libexec}/bin/idea.sh" => "ideacn"})
+        bin.install_symlink("#{libexec}/bin/idea.sh" => "ideacn")
     end
 
     def caveats; <<-EOS.undent

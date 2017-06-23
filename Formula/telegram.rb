@@ -15,6 +15,6 @@ class Telegram < Formula
 
     def install
         libexec.install Dir["*"]
-        bin.install_symlink({"#{libexec}/Telegram" => "telegram"})
+        bin.install_symlink("#{libexec}/Telegram" => "telegram")
     end
 end

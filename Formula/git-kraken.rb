@@ -9,6 +9,6 @@ class GitKraken < Formula
 
     def install
         libexec.install Dir["*"]
-        bin.install_symlink({"#{libexec}/gitkraken" => "gitkraken"})
+        bin.install_symlink("#{libexec}/gitkraken")
     end
 end

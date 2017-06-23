@@ -15,6 +15,6 @@ class SublimeText < Formula
 
     def install
         libexec.install Dir["*"]
-        bin.install_symlink({"#{libexec}/sublime_text" => "subl"})
+        bin.install_symlink("#{libexec}/sublime_text" => "subl")
     end
 end

@@ -9,6 +9,11 @@ class Clion < Formula
 
     def install
         libexec.install Dir["*"]
-        bin.install_symlink({"#{libexec}/bin/clion.sh" => "clion"})
+        bin.install_symlink("#{libexec}/bin/clion.sh" => "clion")
+    end
+
+    def caveats; <<-EOS.undent
+        Executable is linked as "clion".
+        EOS
     end
 end

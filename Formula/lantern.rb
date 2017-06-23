@@ -16,11 +16,11 @@ class Lantern < Formula
     def install
         libexec.install Dir["*"]
         if MacOS.prefer_64_bit?
-            FileUtils.mv("#{libexec}/update_linux_amd64", "#{libexec}/lantern")
+            mv("#{libexec}/update_linux_amd64", "#{libexec}/lantern")
         else
-            FileUtils.mv("#{libexec}/update_linux_386", "#{libexec}/lantern")
+            mv("#{libexec}/update_linux_386", "#{libexec}/lantern")
         end
-        FileUtils.chmod(0755, "#{libexec}/lantern")
-        bin.install_symlink({"#{libexec}/lantern" => "lantern"})
+        chmod(0755, "#{libexec}/lantern")
+        bin.install_symlink("#{libexec}/lantern")
     end
 end

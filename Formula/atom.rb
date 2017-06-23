@@ -2,9 +2,9 @@ class Atom < Formula
     desc "A hackable text editor for the 21st Century."
     homepage "https://atom.io/"
     version "1.17.2"
-    
+
     option "with-taobao-mirror", "Download tarball from https://npm.taobao.org/mirrors/atom/, use this option if you're in mainland China for a faster downloading speed."
-    
+
     if build.with? "taobao-mirror"
         url "https://npm.taobao.org/mirrors/atom/#{version}/atom-amd64.tar.gz"
     else
@@ -17,6 +17,6 @@ class Atom < Formula
 
     def install
         libexec.install Dir["*"]
-        bin.install_symlink({"#{libexec}/atom" => "atom"})
+        bin.install_symlink("#{libexec}/atom" => "atom")
     end
 end

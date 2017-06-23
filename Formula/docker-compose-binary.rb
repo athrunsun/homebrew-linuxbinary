@@ -11,8 +11,8 @@ class DockerComposeBinary < Formula
 
     def install
         libexec.install Dir["*"]
-        FileUtils.mv("#{libexec}/docker-compose-Linux-x86_64", "#{libexec}/docker-compose")
-        FileUtils.chmod(0755, "#{libexec}/docker-compose")
+        mv("#{libexec}/docker-compose-Linux-x86_64", "#{libexec}/docker-compose")
+        chmod(0755, "#{libexec}/docker-compose")
         bin.install_symlink("#{libexec}/docker-compose")
     end
 end

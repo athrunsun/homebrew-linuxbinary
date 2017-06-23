@@ -9,6 +9,11 @@ class Rubymine < Formula
 
     def install
         libexec.install Dir["*"]
-        bin.install_symlink({"#{libexec}/bin/rubymine.sh" => "rubymine"})
+        bin.install_symlink("#{libexec}/bin/rubymine.sh" => "rubymine")
+    end
+
+    def caveats; <<-EOS.undent
+        Executable is linked as "rubymine".
+        EOS
     end
 end

@@ -15,6 +15,6 @@ class Postman < Formula
 
     def install
         libexec.install Dir["*"]
-        bin.install_symlink({"#{libexec}/Postman" => "postman"})
+        bin.install_symlink("#{libexec}/Postman" => "postman")
     end
 end

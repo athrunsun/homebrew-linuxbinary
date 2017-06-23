@@ -9,6 +9,6 @@ class SmartSynchronize < Formula
 
     def install
         libexec.install Dir["*"]
-        bin.install_symlink({"#{libexec}/bin/smartsynchronize.sh" => "smartsynchronize"})
+        bin.install_symlink("#{libexec}/bin/smartsynchronize.sh" => "smartsynchronize")
     end
 end

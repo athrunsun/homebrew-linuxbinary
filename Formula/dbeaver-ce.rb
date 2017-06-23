@@ -15,6 +15,6 @@ class DbeaverCe < Formula
 
     def install
         libexec.install Dir["*"]
-        bin.install_symlink({"#{libexec}/dbeaver" => "dbeaverc"})
+        bin.install_symlink("#{libexec}/dbeaver" => "dbeaverc")
     end
 end

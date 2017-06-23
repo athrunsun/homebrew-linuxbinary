@@ -9,7 +9,7 @@ class PycharmCe < Formula
 
     def install
         libexec.install Dir["*"]
-        bin.install_symlink({"#{libexec}/bin/pycharm.sh" => "pycharmc"})
+        bin.install_symlink("#{libexec}/bin/pycharm.sh" => "pycharmc")
     end
 
     def caveats; <<-EOS.undent
