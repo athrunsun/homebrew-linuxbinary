@@ -13,8 +13,10 @@ class PepperFlash < Formula
     end
 
     def caveats; <<-EOS.undent
+        Post installation instructions:
+        
         Update "/etc/chromium-browser/default" to include:
-
+        
         ```shell
         flashso="/home/[username]/.linuxbrew/opt/pepper-flash/bin/libpepflashplayer.so"
 
