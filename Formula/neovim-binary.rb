@@ -4,7 +4,7 @@ class NeovimBinary < Formula
     version "0.2.1"
 
     url "https://github.com/neovim/neovim/releases/download/nightly/nvim-linux64.tar.gz"
-    sha256 "9adf41f9c8ed525906d270c66ed2cfbd9e2154a3aeccaadbb0bdfb6ce3a3ca73"
+    sha256 "ac01c3209b5a44698fa1f8621ff7e0b79d8da7218cd8620b866f6de70775cc2e"
 
     bottle :unneeded
     conflicts_with "neovim", "neovim-appimage"
