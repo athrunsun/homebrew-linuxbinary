@@ -1,9 +1,9 @@
 class PepperFlash < Formula
     desc "Adobe Flash Player"
     homepage "https://get.adobe.com/flashplayer/"
-    version "26.0.0.137"
+    version "27.0.0.183"
     url "https://fpdownload.adobe.com/pub/flashplayer/pdc/#{version}/flash_player_ppapi_linux.x86_64.tar.gz"
-    sha256 "4fc8ce66561a39fdcffbcd72f6129ebc3fd1f9ab05324d898f6676bdf2c6cde8"
+    sha256 "144325c00f40dfa704eda72fda6518ef797eb5be37715626099de8e722f80d22"
 
     bottle :unneeded
 
@@ -15,7 +15,7 @@ class PepperFlash < Formula
     def caveats; <<-EOS.undent
         Post installation instructions:
         
-        Update "/etc/chromium-browser/default" to include:
+        Create/update "/etc/chromium-browser/default" or "~/.chromium-init" to include:
         
         ```shell
         flashso="/home/[username]/.linuxbrew/opt/pepper-flash/bin/libpepflashplayer.so"
