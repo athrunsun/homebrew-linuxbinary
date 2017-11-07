@@ -11,21 +11,4 @@ class PepperFlash < Formula
         libexec.install Dir["*"]
         bin.install_symlink("#{libexec}/libpepflashplayer.so" => "libpepflashplayer.so")
     end
-
-    def caveats; <<-EOS.undent
-        Post installation instructions:
-        
-        Create/update "/etc/chromium-browser/default" or "~/.chromium-init" to include:
-        
-        ```shell
-        flashso="/home/[username]/.linuxbrew/opt/pepper-flash/bin/libpepflashplayer.so"
-
-        if [ -f $flashso ] || [ -L $flashso ]
-        then
-            flashversion=`strings $flashso|grep ^LNX|sed -e "s/^LNX //"|sed -e "s/,/./g"`
-            CHROMIUM_FLAGS="$CHROMIUM_FLAGS --ppapi-flash-path=$flashso --ppapi-flash-version=$flashversion"
-        fi
-        ```
-        EOS
-    end
 end
