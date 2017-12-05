@@ -1,16 +1,17 @@
 class FirefoxDev < Formula
     desc 'The 100% fresh, free-range, ethical browser, with more speed, privacy and freedom. This is the developer version, in en-US.'
     homepage "https://www.mozilla.org/en-US/firefox/developer/all/"
-    version "57.0"
+    version "58.0"
     
     if MacOS.prefer_64_bit?
-        url "https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=linux64&lang=en-US"
-        sha256 "9d97ec8eda07d75a48497f5d27b87b000af59b51d7468d49a3b5f0f8a63be172"
+        url "https://download-installer.cdn.mozilla.net/pub/devedition/releases/58.0b8/linux-x86_64/en-US/firefox-58.0b8.tar.bz2"
+        sha256 "3b4f80760f18a80379a3c6bb2137d5927f0acbe97d463b070c9a19901499f748"
     else
-        url "https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=linux&lang=en-US"
-        sha256 "ddf8d92066335f81c42d6f730c52d9e6b16ff7c35fea194dd04a87103a5dd9a6"
+        url "https://download-installer.cdn.mozilla.net/pub/devedition/releases/58.0b8/linux-i686/en-US/firefox-58.0b8.tar.bz2"
+        sha256 "aab158679af9bc8d3e7c6f49c22fc9eb38230f8612c7d28f5dc8e1b4af361b71"
     end
 
+    conflicts_with "firefox-dev-zhcn"
     bottle :unneeded
 
     def install
