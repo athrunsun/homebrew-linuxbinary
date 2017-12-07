@@ -11,6 +11,7 @@ class FirefoxEsr < Formula
         sha256 "52abfaa69316d97e3025ef4fb4b7fd89d42e7dd98d61849148d8d19c960c176f"
     end
 
+    conflicts_with "firefox-esr-zhcn"
     bottle :unneeded
 
     def install

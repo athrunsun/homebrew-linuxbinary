@@ -1,4 +1,4 @@
-class FirefoxDev < Formula
+class FirefoxDevZhcn < Formula
     desc 'The 100% fresh, free-range, ethical browser, with more speed, privacy and freedom. This is the developer version, in zh-CN (Chinese (Simplified), i.e. 中文 (简体)).'
     homepage "https://www.mozilla.org/zh-CN/firefox/developer/all/"
     version "58.0"
