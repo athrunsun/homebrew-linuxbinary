@@ -18,7 +18,7 @@ class Nwjs < Formula
         bin.install_symlink("#{libexec}/nw")
     end
 
-    def caveats; <<-EOS.undent
+    def caveats; <<~EOS
         Chromium 62 + Node 8.7.0
         EOS
     end

@@ -12,7 +12,7 @@ class IntellijIdeaCeNoJdk < Formula
         bin.install_symlink("#{libexec}/bin/idea.sh" => "ideacn")
     end
 
-    def caveats; <<-EOS.undent
+    def caveats; <<~EOS
         Executable is linked as "ideacn" so that it doesn't conflict with intellij-idea-ce.
         EOS
     end

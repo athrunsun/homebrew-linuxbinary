@@ -13,7 +13,7 @@ class Sqltabs < Formula
         bin.install_symlink("#{libexec}/sqltabs")
     end
 
-    def caveats; <<-EOS.undent
+    def caveats; <<~EOS
         This formula depends on libpq, you have to resolve this denpendency
         based on the linux distro you use.
         EOS

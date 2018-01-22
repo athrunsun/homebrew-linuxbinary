@@ -15,7 +15,7 @@ class TorBrowser < Formula
 
   def install
     libexec.install Dir["*"]
-    (libexec/"tor-browser_brew_exec").write <<-EOS.undent
+    (libexec/"tor-browser_brew_exec").write <<~EOS
       #!/usr/bin/env bash
       cd #{libexec}
       ./start-tor-browser.desktop "$@"
@@ -24,7 +24,7 @@ class TorBrowser < Formula
     bin.install_symlink("#{libexec}/tor-browser_brew_exec" => "tor-browser")
   end
 
-  def caveats; <<-EOS.undent
+  def caveats; <<~EOS
     Executable is linked as "tor-browser".
     For more usage information, see "tor-browser --help".
     EOS

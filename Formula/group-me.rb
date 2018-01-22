@@ -14,7 +14,7 @@ class GroupMe < Formula
     bin.install_symlink("#{libexec}/GroupMe" => "groupme")
   end
 
-  def caveats; <<-EOS.undent
+  def caveats; <<~EOS
         Executable is linked as "groupme".
         EOS
   end

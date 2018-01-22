@@ -31,7 +31,7 @@ class GoBinary < Formula
         bin.install_symlink Dir["#{libexec}/bin/*"]
     end
 
-    def caveats; <<-EOS.undent
+    def caveats; <<~EOS
         As of go 1.2, a valid GOPATH is required to use the `go get` command:
             https://golang.org/doc/code.html#GOPATH
         So don't forget to set GOROOT:

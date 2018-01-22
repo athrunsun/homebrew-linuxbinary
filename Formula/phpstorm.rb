@@ -12,7 +12,7 @@ class Phpstorm < Formula
         bin.install_symlink("#{libexec}/bin/phpstorm.sh" => "phpstorm")
     end
 
-    def caveats; <<-EOS.undent
+    def caveats; <<~EOS
         Executable is linked as "phpstorm".
         EOS
     end

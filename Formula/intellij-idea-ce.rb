@@ -12,7 +12,7 @@ class IntellijIdeaCe < Formula
         bin.install_symlink("#{libexec}/bin/idea.sh" => "ideac")
     end
 
-    def caveats; <<-EOS.undent
+    def caveats; <<~EOS
         Executable is linked as "ideac".
         EOS
     end

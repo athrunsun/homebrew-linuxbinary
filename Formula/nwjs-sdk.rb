@@ -19,7 +19,7 @@ class NwjsSdk < Formula
         bin.install_symlink("#{libexec}/nwjc")
     end
 
-    def caveats; <<-EOS.undent
+    def caveats; <<~EOS
         Chromium 62 + Node 8.7.0
         EOS
     end

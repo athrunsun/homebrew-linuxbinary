@@ -12,7 +12,7 @@ class PycharmCe < Formula
         bin.install_symlink("#{libexec}/bin/pycharm.sh" => "pycharmc")
     end
 
-    def caveats; <<-EOS.undent
+    def caveats; <<~EOS
         Executable is linked as "pycharmc".
         EOS
     end

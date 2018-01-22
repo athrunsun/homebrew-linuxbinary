@@ -12,7 +12,7 @@ class JetbrainsToolbox < Formula
         bin.install_symlink("#{libexec}/jetbrains-toolbox" => "jbtool")
     end
 
-    def caveats; <<-EOS.undent
+    def caveats; <<~EOS
         Executable is linked as "jbtool".
         EOS
     end

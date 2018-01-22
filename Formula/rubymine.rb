@@ -12,7 +12,7 @@ class Rubymine < Formula
         bin.install_symlink("#{libexec}/bin/rubymine.sh" => "rubymine")
     end
 
-    def caveats; <<-EOS.undent
+    def caveats; <<~EOS
         Executable is linked as "rubymine".
         EOS
     end

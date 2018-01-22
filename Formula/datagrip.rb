@@ -12,7 +12,7 @@ class Datagrip < Formula
         bin.install_symlink("#{libexec}/bin/datagrip.sh" => "datagrip")
     end
 
-    def caveats; <<-EOS.undent
+    def caveats; <<~EOS
         Executable is linked as "datagrip".
         EOS
     end

@@ -19,7 +19,7 @@ class FirefoxBeta < Formula
         bin.install_symlink("#{libexec}/firefox" => "firefox-browser-beta")
     end
 
-    def caveats; <<-EOS.undent
+    def caveats; <<~EOS
         Executable is linked as "firefox-browser-beta".
         For more usage information, see "firefox-browser-beta --help".
         EOS

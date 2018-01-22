@@ -19,7 +19,7 @@ class FirefoxEsr < Formula
         bin.install_symlink("#{libexec}/firefox" => "firefox-esr")
     end
 
-    def caveats; <<-EOS.undent
+    def caveats; <<~EOS
         Executable is linked as "firefox-esr".
         For more usage information, see "firefox-esr --help".
         EOS

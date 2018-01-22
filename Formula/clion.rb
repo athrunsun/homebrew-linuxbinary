@@ -12,7 +12,7 @@ class Clion < Formula
         bin.install_symlink("#{libexec}/bin/clion.sh" => "clion")
     end
 
-    def caveats; <<-EOS.undent
+    def caveats; <<~EOS
         Executable is linked as "clion".
         EOS
     end

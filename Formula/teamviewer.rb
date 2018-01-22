@@ -10,7 +10,7 @@ class Teamviewer < Formula
 
     def install
         libexec.install Dir["*"]
-        (libexec/"teamviewer_brew_exec").write <<-EOS.undent
+        (libexec/"teamviewer_brew_exec").write <<~EOS
             #!/usr/bin/env bash
             cd $(brew --prefix teamviewer)/libexec
             ./teamviewer
@@ -19,7 +19,7 @@ class Teamviewer < Formula
         bin.install_symlink("#{libexec}/teamviewer_brew_exec" => "teamviewer")
     end
 
-    def caveats; <<-EOS.undent
+    def caveats; <<~EOS
         Teamviewer is a 32-bit software, so if you want to use it
         in a 64-bit system, you have to install 32-bit shared libraries
         like dbus based on the linux distro you use otherwise you may eccounter errors like:

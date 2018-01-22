@@ -15,7 +15,7 @@ class MicrosoftTeams < Formula
     bin.install_symlink("#{libexec}/teams" => "teams")
   end
 
-  def caveats; <<-EOS.undent
+  def caveats; <<~EOS
     Executable is linked as "teams".
     EOS
   end

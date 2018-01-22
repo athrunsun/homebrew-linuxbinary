@@ -19,7 +19,7 @@ class FirefoxDev < Formula
         bin.install_symlink("#{libexec}/firefox" => "firefox-browser-dev")
     end
 
-    def caveats; <<-EOS.undent
+    def caveats; <<~EOS
         Executable is linked as "firefox-browser-dev".
         For more usage information, see "firefox-browser-dev --help".
         EOS

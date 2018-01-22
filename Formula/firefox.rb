@@ -19,7 +19,7 @@ class Firefox < Formula
         bin.install_symlink("#{libexec}/firefox" => "firefox-browser")
     end
 
-    def caveats; <<-EOS.undent
+    def caveats; <<~EOS
         Executable is linked as "firefox-browser".
         For more usage information, see "firefox-browser --help".
         EOS
