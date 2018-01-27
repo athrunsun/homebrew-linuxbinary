@@ -1,9 +1,9 @@
 class JetbrainsToolbox < Formula
     desc "A control panel for your tools and projects."
     homepage "https://www.jetbrains.com/toolbox/app/"
-    version "1.2.2314"
+    version "1.6.2914"
     url "https://download.jetbrains.com/toolbox/jetbrains-toolbox-#{version}.tar.gz"
-    sha256 "d9734c1f43f89813cedbb8238df4f2103d697a7f392c7f9e422a6a37933bc572"
+    sha256 "b634aeec655044a02361ca2541ea891a0b34019cc6ccfbef7a39824a00be5a10"
 
     bottle :unneeded
 
