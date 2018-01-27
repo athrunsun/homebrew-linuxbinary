@@ -1,5 +1,5 @@
 class SublimeText < Formula
-    desc "Sublime Text is a sophisticated text editor for code, markup and prose. This formula will install from generic tarball."
+    desc "Sublime Text is a sophisticated text editor for code, markup and prose. This formula will install from tarball for generic linux platform."
     homepage "https://www.sublimetext.com/"
     version "3143"
 
