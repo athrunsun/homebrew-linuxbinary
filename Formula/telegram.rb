@@ -1,14 +1,14 @@
 class Telegram < Formula
     desc "Telegram, a new era of messaging."
     homepage "https://telegram.org/"
-    version "1.1.23"
+    version "1.2.6"
 
     if MacOS.prefer_64_bit?
         url "https://updates.tdesktop.com/tlinux/tsetup.#{version}.tar.xz"
-        sha256 "e7955a6ad0ce9105ac3c2ae6ddf1d480430acb0e295149f0d08e951ece74000c"
+        sha256 "d132a5710765dbd4120c13864ce81a546ea3b4fda14b9736ecc2310bd0513d3d"
     else
         url "https://updates.tdesktop.com/tlinux32/tsetup32.#{version}.tar.xz"
-        sha256 "d3a93bd958e3e692e39c9744e62a967e42ee089c68a106a3ab236937252111ef"
+        sha256 "54dda2b1d0b961d0e0dc7fa70dcf4e54cb2836ce4c887526fb366044928576fc"
     end
 
     bottle :unneeded
