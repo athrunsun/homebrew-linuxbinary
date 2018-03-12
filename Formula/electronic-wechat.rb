@@ -11,4 +11,9 @@ class ElectronicWechat < Formula
         libexec.install Dir["*"]
         bin.install_symlink({"#{libexec}/electronic-wechat" => "ewechat"})
     end
+
+    def caveats; <<~EOS
+        Executable is linked as "ewechat".
+        EOS
+    end
 end
