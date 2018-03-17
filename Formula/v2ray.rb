@@ -15,7 +15,7 @@ class V2ray < Formula
 
     def install
         libexec.install Dir["*"]
-        bin.install("#{libexec}/v2ray")
-        bin.install("#{libexec}/v2ctl")
+        bin.install_symlink("#{libexec}/v2ray")
+        bin.install_symlink("#{libexec}/v2ctl")
     end
 end
