@@ -1,7 +1,7 @@
 class V2ray < Formula
     desc "A platform for building proxies to bypass network restrictions."
     homepage "https://www.v2ray.com"
-    version "3.13"
+    version "3.14"
 
     option "with-mirror", "Download installation archive from https://www.v2ray.com/download, use this option if you're in mainland China for a faster downloading speed."
 
@@ -12,7 +12,7 @@ class V2ray < Formula
             url "https://github.com/v2ray/v2ray-core/releases/download/v#{version}/v2ray-linux-64.zip"
         end
 
-        sha256 "95ac7776ec7206c1d7d55b17e8aae845a8057b4032d00bd1d2233ca959aa1609"
+        sha256 "ecb25b6423d170f8140e6ffc402cfcb991617c53ff2f4be7232845ffa8fca56b"
     else
         if build.with? "mirror"
             url "https://www.v2ray.com/ipns/QmdtMuAhEUPFX9NQiGhRj2zhS1oEA76SXNDnZRHqivjMwR/Core-v#{version}/v2ray-linux-32.zip"
@@ -20,7 +20,7 @@ class V2ray < Formula
             url "https://github.com/v2ray/v2ray-core/releases/download/v#{version}/v2ray-linux-32.zip"
         end
         
-        sha256 "7d28ed7b42b19c35aebe3be30b36bf0f3ecd1bf0a8a2ea2ac4b87c7d61b2189a"
+        sha256 "861f292b9585e3945158a22009d2added6748ad656e614e15bfd97ecb5bd08d4"
     end
 
     bottle :unneeded
@@ -29,5 +29,10 @@ class V2ray < Formula
         libexec.install Dir["*"]
         bin.install_symlink("#{libexec}/v2ray")
         bin.install_symlink("#{libexec}/v2ctl")
+    end
+
+    def caveats; <<~EOS
+        Executable linked as "v2ray" and "v2ctl".
+        EOS
     end
 end
