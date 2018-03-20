@@ -1,4 +1,4 @@
-class V2ray < Formula
+class V2rayCore < Formula
     desc "A platform for building proxies to bypass network restrictions."
     homepage "https://github.com/v2ray/v2ray-core https://www.v2ray.com"
     version "3.14"
@@ -29,6 +29,8 @@ class V2ray < Formula
         libexec.install Dir["*"]
         bin.install_symlink("#{libexec}/v2ray")
         bin.install_symlink("#{libexec}/v2ctl")
+        bin.install_symlink("#{libexec}/geoip.dat")
+        bin.install_symlink("#{libexec}/geosite.dat")
     end
 
     def caveats; <<~EOS
