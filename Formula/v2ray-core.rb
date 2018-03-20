@@ -35,6 +35,7 @@ class V2rayCore < Formula
 
     def caveats; <<~EOS
         Executable linked as "v2ray" and "v2ctl".
+        "geoip.dat" and "geosite.dat" are also installed by symlink.
         EOS
     end
 end
