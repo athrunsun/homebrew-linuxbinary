@@ -1,6 +1,6 @@
-class Telegram < Formula
+class TelegramDesktop < Formula
     desc "Telegram, a new era of messaging."
-    homepage "https://telegram.org/ https://github.com/telegramdesktop/tdesktop"
+    homepage "https://github.com/telegramdesktop/tdesktop https://telegram.org/"
     version "1.2.6"
 
     option "with-mirror", "Download installation archive from https://updates.tdesktop.com"

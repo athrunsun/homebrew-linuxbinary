@@ -1,6 +1,6 @@
 class V2ray < Formula
     desc "A platform for building proxies to bypass network restrictions."
-    homepage "https://www.v2ray.com"
+    homepage "https://github.com/v2ray/v2ray-core https://www.v2ray.com"
     version "3.14"
 
     option "with-mirror", "Download installation archive from https://www.v2ray.com/download, use this option if you're in mainland China for a faster downloading speed."
