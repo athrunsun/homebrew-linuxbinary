@@ -1,4 +1,4 @@
-class DnscryptProxy < Formula
+class DnscryptProxyBinary < Formula
     desc "A flexible DNS proxy, with support for encrypted DNS protocols."
     homepage "https://github.com/jedisct1/dnscrypt-proxy https://dnscrypt.info/"
     version "2.0.7"

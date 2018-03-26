@@ -1,10 +1,10 @@
 class DockerComposeBinary < Formula
     desc "Isolated development environments using Docker."
-    homepage "https://docs.docker.com/compose/"
-    version "1.18.0"
+    homepage "https://github.com/docker/compose https://docs.docker.com/compose/"
+    version "1.20.1"
 
     url "https://github.com/docker/compose/releases/download/#{version}/docker-compose-Linux-x86_64"
-    sha256 "b2f2c3834107f526b1d9cc8d8e0bdd132c6f1495b036a32cbc61b5288d2e2a01"
+    sha256 "11a6923c2a589b946598fe205c8f645e57f3f4ee153d3b7315b7e1993c1b2ad1"
 
     bottle :unneeded
     conflicts_with "docker-compose"
@@ -14,5 +14,10 @@ class DockerComposeBinary < Formula
         mv("#{libexec}/docker-compose-Linux-x86_64", "#{libexec}/docker-compose")
         chmod(0755, "#{libexec}/docker-compose")
         bin.install_symlink("#{libexec}/docker-compose")
+    end
+
+    def caveats; <<~EOS
+        Executable is linked as "docker-compose".
+        EOS
     end
 end
