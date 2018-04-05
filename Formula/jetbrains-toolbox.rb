@@ -1,7 +1,7 @@
 class JetbrainsToolbox < Formula
     desc "A control panel for your tools and projects."
     homepage "https://www.jetbrains.com/toolbox/app/"
-    version "1.7.3593"
+    version "1.8.3678"
 
     option "with-no-cdn", "Download from https://download-cf.jetbrains.com directly. Use this if CDN's version is behind, which will cause a hash mismatch."
 
@@ -11,7 +11,7 @@ class JetbrainsToolbox < Formula
         url "https://download.jetbrains.com/toolbox/jetbrains-toolbox-#{version}.tar.gz"
     end
 
-    sha256 "388a9553ed6b25d2d042e1b46f517da2aa618581b0368e716e8380bca4eab976"
+    sha256 "bb98b94fa714ca07db31ac5bb42fbba2eac610c360541848e59adf0f8d84cefb"
 
     bottle :unneeded
 
