@@ -3,6 +3,9 @@ class SublimeTextWithImeFix < Formula
     homepage "https://www.sublimetext.com/"
     version "3143"
 
+    url "https://github.com/lyfeyaj/sublime-text-imfix/raw/master/lib/libsublime-imfix.so"
+    sha256 "db44ddff21d8b2493576368ae01eba93624767fbcf5f062311383bb07bbaa176"
+
     #conflicts_with "sublime-text", :because => "sublime-text also ships a subl binary"
     depends_on "sublime-text"
 
@@ -14,17 +17,18 @@ class SublimeTextWithImeFix < Formula
     #     sha256 "b1ecc4b70d66b9236b876f1913c4094b6dd51436e45c74883ba70a1939e9f735"
     # end
     
-    resource "sublime-text-ime-fix" do
-        url "https://github.com/lyfeyaj/sublime-text-imfix/raw/master/lib/libsublime-imfix.so"
-        sha256 "db44ddff21d8b2493576368ae01eba93624767fbcf5f062311383bb07bbaa176"
-    end
+    # resource "sublime-text-ime-fix" do
+    #     url "https://github.com/lyfeyaj/sublime-text-imfix/raw/master/lib/libsublime-imfix.so"
+    #     sha256 "db44ddff21d8b2493576368ae01eba93624767fbcf5f062311383bb07bbaa176"
+    # end
     
     def install
-        libexec.install Dir["*"]
+        #libexec.install Dir["*"]
+        (libexec/"lib").install "libsublime-imfix.so"
         
-        resource("sublime-text-ime-fix").stage do
-            (libexec/"lib").install "libsublime-imfix.so"
-        end
+        # resource("sublime-text-ime-fix").stage do
+        #     (libexec/"lib").install "libsublime-imfix.so"
+        # end
 
         (bin/"subli").write <<~EOS
             #!/bin/sh
