@@ -1,9 +1,9 @@
 class IntellijIdeaCe < Formula
     desc "The Most Intelligent Java IDE, community edition."
     homepage "http://www.jetbrains.com/idea/"
-    version "2017.2.5"
+    version "2018.1.2"
     url "https://download.jetbrains.com/idea/ideaIC-#{version}.tar.gz"
-    sha256 "194e6d4e5d2216c2f708842375be9f4ede5f731924b2710cf12c02e3351fe606"
+    sha256 "4b7f7ed69ed8cda9718c640f36f18bf37de7d74ce1379d9d0217e664aa5d38e6"
 
     bottle :unneeded
 
