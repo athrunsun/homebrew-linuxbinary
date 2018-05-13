@@ -1,14 +1,14 @@
 class Postman < Formula
     desc "Postman helps you develop APIs faster."
     homepage "https://www.getpostman.com/"
-    version "4.9.1"
+    version "6.0.10"
 
     if MacOS.prefer_64_bit?
         url "https://dl.pstmn.io/download/version/#{version}/linux64"
-        sha256 "f6c2ca7db3c30393b46f7b614b10e904e3951c5e354b317b9dba33ece51aa96e"
+        sha256 "82e6debb7bcb436679243581add5cc85cc7c96846c19c76d07a5416e16845a48"
     else
         url "https://dl.pstmn.io/download/version/#{version}/linux32"
-        sha256 "b7c3dcf44f0a0727084af1dc0b8e69677fd078e7dd0b95af5386d2e53f9d6dd6"
+        sha256 "480a699fa2ec8f9d034997ee87e1dccd409fb07388374b253d29cb29f539e523"
     end
 
     bottle :unneeded
@@ -16,5 +16,10 @@ class Postman < Formula
     def install
         libexec.install Dir["*"]
         bin.install_symlink("#{libexec}/Postman" => "postman")
+    end
+
+    def caveats; <<~EOS
+        Find latest versions in https://www.getpostman.com/apps#changelog
+        EOS
     end
 end
