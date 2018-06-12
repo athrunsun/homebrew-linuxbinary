@@ -3,7 +3,7 @@ class IntellijIdea < Formula
     homepage "http://www.jetbrains.com/idea/"
     version "2018.1.4"
     url "https://download.jetbrains.com/idea/ideaIU-#{version}.tar.gz"
-    sha256 "c0a8f0fdd9c80bec62320fc26bdf3546ee513f51d990e0cf6d66b3d998e23a10"
+    sha256 "fb16e1533902823e1a9c5eccd5193cc548c9ce9ba5687778446a3475266c4284"
 
     bottle :unneeded
 
