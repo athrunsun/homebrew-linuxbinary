@@ -1,9 +1,9 @@
 class Pycharm < Formula
     desc "Python IDE for Professional Developers, professional edition."
     homepage "http://www.jetbrains.com/pycharm/"
-    version "2017.1.4"
+    version "2018.1.4"
     url "https://download.jetbrains.com/python/pycharm-professional-#{version}.tar.gz"
-    sha256 "bbae5602b9cf6d26ccce9e1bf8b388d79c27cf89673d1a56f248bf0a50e518ed"
+    sha256 "6cda9b2717b161387983a09ed88b39d76d88fea208601d125666c02b7c6961cf"
 
     bottle :unneeded
 
