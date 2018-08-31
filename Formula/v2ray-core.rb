@@ -1,26 +1,14 @@
 class V2rayCore < Formula
     desc "A platform for building proxies to bypass network restrictions."
-    homepage "https://github.com/v2ray/v2ray-core https://www.v2ray.com"
-    version "3.14"
-
-    option "with-mirror", "Download installation archive from https://www.v2ray.com/download, use this option if you're in mainland China for a faster downloading speed."
+    homepage "https://github.com/v2ray/v2ray-core"
+    version "3.37"
 
     if MacOS.prefer_64_bit?
-        if build.with? "mirror"
-            url "https://www.v2ray.com/ipns/QmdtMuAhEUPFX9NQiGhRj2zhS1oEA76SXNDnZRHqivjMwR/Core-v#{version}/v2ray-linux-64.zip"
-        else
-            url "https://github.com/v2ray/v2ray-core/releases/download/v#{version}/v2ray-linux-64.zip"
-        end
-
-        sha256 "ecb25b6423d170f8140e6ffc402cfcb991617c53ff2f4be7232845ffa8fca56b"
+        url "https://github.com/v2ray/v2ray-core/releases/download/v#{version}/v2ray-linux-64.zip"
+        sha256 "a937b87702400f5de6beb12f4c9d9c630d5c01cb85443b313c38e5921b845df4"
     else
-        if build.with? "mirror"
-            url "https://www.v2ray.com/ipns/QmdtMuAhEUPFX9NQiGhRj2zhS1oEA76SXNDnZRHqivjMwR/Core-v#{version}/v2ray-linux-32.zip"
-        else
-            url "https://github.com/v2ray/v2ray-core/releases/download/v#{version}/v2ray-linux-32.zip"
-        end
-        
-        sha256 "861f292b9585e3945158a22009d2added6748ad656e614e15bfd97ecb5bd08d4"
+        url "https://github.com/v2ray/v2ray-core/releases/download/v#{version}/v2ray-linux-32.zip"
+        sha256 "b2441b11c38a2ec23f2458f532edda52dc908e53036a96ba2466192ba694440e"
     end
 
     bottle :unneeded
@@ -35,7 +23,7 @@ class V2rayCore < Formula
 
     def caveats; <<~EOS
         Executable linked as "v2ray" and "v2ctl".
-        "geoip.dat" and "geosite.dat" are also installed by symlink.
+        "geoip.dat" and "geosite.dat" are also installed as symlinks.
         EOS
     end
 end
