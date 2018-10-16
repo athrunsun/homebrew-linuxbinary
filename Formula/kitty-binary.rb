@@ -1,14 +1,14 @@
 class KittyBinary < Formula
     desc "A cross-platform, fast, feature full, GPU based terminal emulator"
     homepage "https://github.com/kovidgoyal/kitty"
-    version "0.12.1"
+    version "0.12.3"
 
     if MacOS.prefer_64_bit?
         url "https://github.com/kovidgoyal/kitty/releases/download/v0.12.1/kitty-0.12.1-x86_64.txz"
-        sha256 "cff761ea72a77e93b774604adbc22136ee4e7145f2a3b70b68901ae6aaf73d62"
+        sha256 "d773c7c8b89cdb1e7f21edc8cb91f1b045b3ba2c8b5c135c8f88ce06957f4813"
     else
         url "https://github.com/kovidgoyal/kitty/releases/download/v0.12.1/kitty-0.12.1-i686.txz"
-        sha256 "378ab690cd14eb50cbb90179a86e80529e82e28d05e2aec715803985e5cb220d"
+        sha256 "ca669da12ab5d359efbf2eeab6649c298148161e21b017dba3c3417557ddb145"
     end
 
     bottle :unneeded
