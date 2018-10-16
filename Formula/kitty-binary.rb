@@ -4,10 +4,10 @@ class KittyBinary < Formula
     version "0.12.3"
 
     if MacOS.prefer_64_bit?
-        url "https://github.com/kovidgoyal/kitty/releases/download/v0.12.1/kitty-0.12.1-x86_64.txz"
+        url "https://github.com/kovidgoyal/kitty/releases/download/v#{version}/kitty-#{version}-x86_64.txz"
         sha256 "d773c7c8b89cdb1e7f21edc8cb91f1b045b3ba2c8b5c135c8f88ce06957f4813"
     else
-        url "https://github.com/kovidgoyal/kitty/releases/download/v0.12.1/kitty-0.12.1-i686.txz"
+        url "https://github.com/kovidgoyal/kitty/releases/download/v#{version}/kitty-#{version}-i686.txz"
         sha256 "ca669da12ab5d359efbf2eeab6649c298148161e21b017dba3c3417557ddb145"
     end
 
