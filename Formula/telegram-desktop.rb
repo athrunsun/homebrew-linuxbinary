@@ -1,9 +1,9 @@
 class TelegramDesktop < Formula
     desc "Telegram, a new era of messaging."
-    homepage "https://github.com/telegramdesktop/tdesktop https://telegram.org/"
-    version "1.3.9"
+    homepage "https://github.com/telegramdesktop/tdesktop"
+    version "1.4.3"
 
-    option "with-github", "Download installation archive from https://github.com/telegramdesktop/tdesktop"
+    option "with-github", "Download installation file from github."
 
     if MacOS.prefer_64_bit?
         if build.with? "github"
@@ -12,7 +12,7 @@ class TelegramDesktop < Formula
             url "https://updates.tdesktop.com/tlinux/tsetup.#{version}.tar.xz"
         end
 
-        sha256 "693e25ca19ba8fc80ed3ea112d7287beb96fe057c1bf1c8c58c40191dc2bd9f9"
+        sha256 "c839297d9559cc54ee9e5054c4e997f86384b3f0e603c38b7708af686894a8fc"
     else
         if build.with? "github"
             url "https://github.com/telegramdesktop/tdesktop/releases/download/v#{version}/tsetup32.#{version}.tar.xz"
@@ -20,7 +20,7 @@ class TelegramDesktop < Formula
             url "https://updates.tdesktop.com/tlinux32/tsetup32.#{version}.tar.xz"
         end
 
-        sha256 "e37fa31ad99aff73cfd00cb40e095f4b90cffe42412c812a72f8672f5db78df0"
+        sha256 "cc8d6deec4d10667369bbfd32c04f8e03504037521cb4834d811a87571133bec"
     end
 
     bottle :unneeded
@@ -28,12 +28,12 @@ class TelegramDesktop < Formula
     def install
         libexec.install Dir["*"]
         bin.install_symlink("#{libexec}/Telegram" => "telegram")
-        bin.install_symlink("#{libexec}/Updater" => "Updater")
+        bin.install_symlink("#{libexec}/Updater" => "telegram-updater")
     end
 
     def caveats; <<~EOS
-        Executable linked as "telegram".
-        Auto updater is linked as "Updater".
+        Executable is linked as "telegram".
+        Auto updater is linked as "telegram-updater".
         EOS
     end
 end
