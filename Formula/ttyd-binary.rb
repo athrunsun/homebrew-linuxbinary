@@ -17,8 +17,10 @@ class TtydBinary < Formula
         libexec.install Dir["*"]
 
         if MacOS.prefer_64_bit?
+            chmod(0755, "#{libexec}/ttyd_linux.x86_64")
             bin.install_symlink("#{libexec}/ttyd_linux.x86_64" => "ttyd")
         else
+            chmod(0755, "#{libexec}/ttyd_linux.i386")
             bin.install_symlink("#{libexec}/ttyd_linux.i386" => "ttyd")
         end
     end
