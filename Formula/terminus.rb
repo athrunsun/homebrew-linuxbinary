@@ -1,4 +1,4 @@
-class TerminusBinary < Formula
+class Terminus < Formula
     desc "A terminal for a more modern age"
     homepage "https://github.com/Eugeny/terminus"
     version "1.0.0.61"
