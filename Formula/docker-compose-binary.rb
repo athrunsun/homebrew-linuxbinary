@@ -1,10 +1,10 @@
 class DockerComposeBinary < Formula
     desc "Isolated development environments using Docker."
-    homepage "https://github.com/docker/compose https://docs.docker.com/compose/"
-    version "1.20.1"
+    homepage "https://github.com/docker/compose"
+    version "1.23.1"
 
     url "https://github.com/docker/compose/releases/download/#{version}/docker-compose-Linux-x86_64"
-    sha256 "11a6923c2a589b946598fe205c8f645e57f3f4ee153d3b7315b7e1993c1b2ad1"
+    sha256 "c176543737b8aea762022245f0f4d58781d3cb1b072bc14f3f8e5bb96f90f1a2"
 
     bottle :unneeded
     conflicts_with "docker-compose"
