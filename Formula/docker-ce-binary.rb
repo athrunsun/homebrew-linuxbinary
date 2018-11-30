@@ -1,10 +1,10 @@
 class DockerCeBinary < Formula
     desc "Pack, ship and run any application as a lightweight container. This is the community edition."
-    homepage "https://www.docker.com/"
-    version "17.05.0"
+    homepage "https://docs.docker.com/install/linux/docker-ce/binaries"
+    version "18.09.0"
 
-    url "https://get.docker.com/builds/Linux/x86_64/docker-#{version}-ce.tgz"
-    sha256 "340e0b5a009ba70e1b644136b94d13824db0aeb52e09071410f35a95d94316d9"
+    url "https://download.docker.com/linux/static/stable/x86_64/docker-#{version}.tgz"
+    sha256 "08795696e852328d66753963249f4396af2295a7fe2847b839f7102e25e47cb9"
 
     bottle :unneeded
     conflicts_with "docker"
