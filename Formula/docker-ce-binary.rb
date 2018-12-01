@@ -7,7 +7,7 @@ class DockerCeBinary < Formula
     sha256 "08795696e852328d66753963249f4396af2295a7fe2847b839f7102e25e47cb9"
 
     bottle :unneeded
-    conflicts_with "docker"
+    conflicts_with "docker", :because => "both install `docker` binaries"
 
     def install
         libexec.install Dir["*"]
