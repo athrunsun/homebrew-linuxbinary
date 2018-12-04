@@ -1,5 +1,5 @@
 class FirefoxZhcn < Formula
-    desc 'The 100% fresh, free-range, ethical browser, with more speed, privacy and freedom. This is the stable version, in zh-CN (Chinese (Simplified), i.e. 中文 (简体)).'
+    desc "The 100% fresh, free-range, ethical browser, with more speed, privacy and freedom. This is the stable version, in zh-CN (Chinese (Simplified), i.e. 中文 (简体))."
     homepage "https://www.mozilla.org/zh-CN/firefox/all/"
     version "57.0.1"
 

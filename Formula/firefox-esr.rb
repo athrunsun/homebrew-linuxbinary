@@ -1,5 +1,5 @@
 class FirefoxEsr < Formula
-    desc 'The 100% fresh, free-range, ethical browser, with more speed, privacy and freedom. This is the ESR version, in en-US.'
+    desc "The 100% fresh, free-range, ethical browser, with more speed, privacy and freedom. This is the ESR version, in en-US."
     homepage "https://www.mozilla.org/en-US/firefox/organizations/all/"
     version "52.5.0"
 

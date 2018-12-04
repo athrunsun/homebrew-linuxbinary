@@ -1,5 +1,5 @@
 class FirefoxDev < Formula
-    desc 'The 100% fresh, free-range, ethical browser, with more speed, privacy and freedom. This is the developer version, in en-US.'
+    desc "The 100% fresh, free-range, ethical browser, with more speed, privacy and freedom. This is the developer version, in en-US."
     homepage "https://www.mozilla.org/en-US/firefox/developer/all/"
     version "58.0"
     
