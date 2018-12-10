@@ -10,10 +10,17 @@ class Zoom < Formula
 
     def install
         libexec.install Dir["*"]
-        bin.install_symlink("#{libexec}/zoom" => "zoom")
+        (libexec/"zoom_brew_exec").write <<~EOS
+            #!/usr/bin/env bash
+            cd $(brew --prefix zoom)/libexec
+            ./zoom
+        EOS
+        chmod(0755, "#{libexec}/zoom_brew_exec")
+        bin.install_symlink("#{libexec}/zoom_brew_exec" => "zoom")
     end
 
     def caveats; <<~EOS
+        You might need to install some dependencies like 'libxcb-xtest0'.
         Executable linked as "zoom".
         EOS
     end
