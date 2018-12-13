@@ -1,26 +1,26 @@
 class VisualStudioCode < Formula
     desc "VS Code is a new type of tool that combines the simplicity of a code editor with what developers need for their core edit-build-debug cycle. This is the stable version."
     homepage "https://code.visualstudio.com/"
-    version "1.29.1"
+    version "1.30.0"
 
     option "with-cn-mirror", "Download from Azure China CDN, use this option if you're in mainland China for a faster downloading speed."
 
     if MacOS.prefer_64_bit?
         if build.with? "cn-mirror"
-            url "https://vscode.cdn.azure.cn/stable/bc24f98b5f70467bc689abf41cc5550ca637088e/code-stable-1542309103.tar.gz"
+            url "https://vscode.cdn.azure.cn/stable/c6e592b2b5770e40a98cb9c2715a8ef89aec3d74/code-stable-1544567094.tar.gz"
         else
-            url "https://az764295.vo.msecnd.net/stable/bc24f98b5f70467bc689abf41cc5550ca637088e/code-stable-1542309103.tar.gz"
+            url "https://az764295.vo.msecnd.net/stable/c6e592b2b5770e40a98cb9c2715a8ef89aec3d74/code-stable-1544567094.tar.gz"
         end
 
-        sha256 "31e570bc8ba9e32e2d7ea9a746fb91fbf8a4e011372d99c16c633f4abeacc6e4"
+        sha256 "818ab50bd1e1d0c93ca2cbb21d3bd8697563fd7399049de79ebd040c9cf376fd"
     else
         if build.with? "cn-mirror"
-            url "https://vscode.cdn.azure.cn/stable/bc24f98b5f70467bc689abf41cc5550ca637088e/code-stable-1542309197.tar.gz"
+            url "https://vscode.cdn.azure.cn/stable/c6e592b2b5770e40a98cb9c2715a8ef89aec3d74/code-stable-1544567214.tar.gz"
         else
-            url "https://az764295.vo.msecnd.net/stable/bc24f98b5f70467bc689abf41cc5550ca637088e/code-stable-1542309197.tar.gz"
+            url "https://az764295.vo.msecnd.net/stable/c6e592b2b5770e40a98cb9c2715a8ef89aec3d74/code-stable-1544567214.tar.gz"
         end
 
-        sha256 "9c0fa7448b707be0b55ebc9ebdfa4e90f291d1042ca145ef91e847f3de882964"
+        sha256 "414a02532374e219b990255a14eee06ec4467ef58b148f7586cbee636c93a22d"
     end
 
     bottle :unneeded
