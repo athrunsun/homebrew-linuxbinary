@@ -1,5 +1,5 @@
-class BraveBrowser < Formula
-    desc "Brave browser for Desktop and Laptop computers running Windows, OSX, and Linux."
+class BraveLaptop < Formula
+    desc "Brave browser for Desktop and Laptop computers running Windows, OSX, and Linux, based on muon."
     homepage "https://github.com/brave/browser-laptop"
     version "0.23.105"
 
