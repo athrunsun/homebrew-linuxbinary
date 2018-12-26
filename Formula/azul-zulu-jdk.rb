@@ -8,6 +8,9 @@ class AzulZuluJdk < Formula
 
     bottle :unneeded
 
+    conflicts_with "oracle-jdk-lts", :because => "both install java binaries"
+    conflicts_with "sap-machine-jdk", :because => "both install java binaries"
+
     def install
         libexec.install Dir["*"]
         bin.install_symlink Dir["#{libexec}/bin/*"]
