@@ -1,4 +1,4 @@
-class Firefox < Formula
+class Librefox < Formula
     desc "Firefox with privacy enhancements."
     homepage "https://github.com/intika/Librefox"
     version "2.1"

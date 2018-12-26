@@ -1,4 +1,4 @@
-class FirefoxEsr < Formula
+class LibrefoxEsr < Formula
     desc "Firefox with privacy enhancements, ESR version."
     homepage "https://github.com/intika/Librefox"
     version "2.1"
