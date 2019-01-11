@@ -3,13 +3,8 @@ class FirefoxBeta < Formula
     homepage "https://www.mozilla.org/en-US/firefox/beta/all/"
     version "58.0"
     
-    if MacOS.prefer_64_bit?
-        url "https://download-installer.cdn.mozilla.net/pub/firefox/releases/58.0b8/linux-x86_64/en-US/firefox-58.0b8.tar.bz2"
-        sha256 "0a649eef8e7075660ccf2c571c1c1989782b3384f732970a727115586d5833f5"
-    else
-        url "https://download-installer.cdn.mozilla.net/pub/firefox/releases/58.0b8/linux-i686/en-US/firefox-58.0b8.tar.bz2"
-        sha256 "5c2b4df1f066f66b9ceee8efa501ed11314685ed24ed95b3340f1d5822b5c8a0"
-    end
+    url "https://download-installer.cdn.mozilla.net/pub/firefox/releases/58.0b8/linux-x86_64/en-US/firefox-58.0b8.tar.bz2"
+    sha256 "0a649eef8e7075660ccf2c571c1c1989782b3384f732970a727115586d5833f5"
 
     conflicts_with "firefox-beta-zhcn"
     bottle :unneeded

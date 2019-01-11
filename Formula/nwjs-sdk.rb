@@ -3,13 +3,8 @@ class NwjsSdk < Formula
     homepage "https://nwjs.io/"
     version "0.26.0"
 
-    if MacOS.prefer_64_bit?
-        url "https://dl.nwjs.io/v#{version}/nwjs-sdk-v#{version}-linux-x64.tar.gz"
-        sha256 "529d46d200dd7cf321e9c3fb3e1a30d250e574db90c2f10536b37668856f7537"
-    else
-        url "https://dl.nwjs.io/v#{version}/nwjs-sdk-v#{version}-linux-ia32.tar.gz"
-        sha256 "178f6258f187073c78ea3319c853b23763beea59de8cdf1bd5f4803d876525ca"
-    end
+    url "https://dl.nwjs.io/v#{version}/nwjs-sdk-v#{version}-linux-x64.tar.gz"
+    sha256 "529d46d200dd7cf321e9c3fb3e1a30d250e574db90c2f10536b37668856f7537"
 
     bottle :unneeded
 

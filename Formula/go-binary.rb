@@ -5,23 +5,13 @@ class GoBinary < Formula
 
     option "with-mirror", "Download from https://mirrors.ustc.edu.cn/golang/, use this option if you're in mainland China for a faster downloading speed."
 
-    if MacOS.prefer_64_bit?
-        if build.with? "mirror"
-            url "https://mirrors.ustc.edu.cn/golang/go#{version}.linux-amd64.tar.gz"
-        else
-            url "https://storage.googleapis.com/golang/go#{version}.linux-amd64.tar.gz"
-        end
-
-        sha256 "1862f4c3d3907e59b04a757cfda0ea7aa9ef39274af99a784f5be843c80c6772"
+    if build.with? "mirror"
+        url "https://mirrors.ustc.edu.cn/golang/go#{version}.linux-amd64.tar.gz"
     else
-        if build.with? "mirror"
-            url "https://mirrors.ustc.edu.cn/golang/go#{version}.linux-386.tar.gz"
-        else
-            url "https://storage.googleapis.com/golang/go#{version}.linux-386.tar.gz"
-        end
-
-        sha256 "ff4895eb68fb1daaec41c540602e8bb4c1e8bb2f0e7017367171913fc9995ed2"
+        url "https://storage.googleapis.com/golang/go#{version}.linux-amd64.tar.gz"
     end
+
+    sha256 "1862f4c3d3907e59b04a757cfda0ea7aa9ef39274af99a784f5be843c80c6772"
 
     bottle :unneeded
     conflicts_with "go"

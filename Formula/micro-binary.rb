@@ -3,13 +3,8 @@ class MicroBinary < Formula
     homepage "https://github.com/zyedidia/micro"
     version "1.4.1"
 
-    if MacOS.prefer_64_bit?
-        url "https://github.com/zyedidia/micro/releases/download/v#{version}/micro-#{version}-linux64.tar.gz"
-        sha256 "e7d4c9427f9fdfed78e69d42cf518e93ae15fc8f70b7f0f87d292ed81206e900"
-    else
-        url "https://github.com/zyedidia/micro/releases/download/v#{version}/micro-#{version}-linux32.tar.gz"
-        sha256 "d72d511b4f0fec5bb614b38607e68c5f0918f836d0f60e87c48f0b18e2eab916"
-    end
+    url "https://github.com/zyedidia/micro/releases/download/v#{version}/micro-#{version}-linux64.tar.gz"
+    sha256 "e7d4c9427f9fdfed78e69d42cf518e93ae15fc8f70b7f0f87d292ed81206e900"
 
     bottle :unneeded
     conflicts_with "micro"

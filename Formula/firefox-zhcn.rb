@@ -3,13 +3,8 @@ class FirefoxZhcn < Formula
     homepage "https://www.mozilla.org/zh-CN/firefox/all/"
     version "57.0.1"
 
-    if MacOS.prefer_64_bit?
-        url "https://download-installer.cdn.mozilla.net/pub/firefox/releases/#{version}/linux-x86_64/zh-CN/firefox-#{version}.tar.bz2"
-        sha256 "c29fcb214607726d9d8958927f2840d9407ce18d457b0358ddca756a00679988"
-    else
-        url "https://download-installer.cdn.mozilla.net/pub/firefox/releases/#{version}/linux-i686/zh-CN/firefox-#{version}.tar.bz2"
-        sha256 "384401aa2a5a955075002fb06a60ed0ba9826dc3a1d14e6edfe6f93bff18486a"
-    end
+    url "https://download-installer.cdn.mozilla.net/pub/firefox/releases/#{version}/linux-x86_64/zh-CN/firefox-#{version}.tar.bz2"
+    sha256 "c29fcb214607726d9d8958927f2840d9407ce18d457b0358ddca756a00679988"
 
     conflicts_with "firefox"
     bottle :unneeded

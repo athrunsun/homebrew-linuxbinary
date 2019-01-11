@@ -5,23 +5,13 @@ class V2rayCore < Formula
 
     option "with-mirror", "Download from https://v2ray.com/download."
 
-    if MacOS.prefer_64_bit?
-        if build.with? "mirror"
-            url "https://v2ray.com/download/Core_v#{version}/v2ray-linux-64.zip"
-        else
-            url "https://github.com/v2ray/v2ray-core/releases/download/v#{version}/v2ray-linux-64.zip"
-        end
-
-        sha256 "73435afcca5f0e760b35783ff7ca2df2706c0426454411718acdeb5e082460ff"
+    if build.with? "mirror"
+        url "https://v2ray.com/download/Core_v#{version}/v2ray-linux-64.zip"
     else
-        if build.with? "mirror"
-            url "https://v2ray.com/download/Core_v#{version}/v2ray-linux-32.zip"
-        else
-            url "https://github.com/v2ray/v2ray-core/releases/download/v#{version}/v2ray-linux-32.zip"
-        end
-        
-        sha256 "a02c962225acc38d930edd27a4b2b4e54877b0cabf869336c2610ceb1ffa95e3"
+        url "https://github.com/v2ray/v2ray-core/releases/download/v#{version}/v2ray-linux-64.zip"
     end
+
+    sha256 "73435afcca5f0e760b35783ff7ca2df2706c0426454411718acdeb5e082460ff"
 
     bottle :unneeded
 

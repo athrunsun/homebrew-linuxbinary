@@ -5,23 +5,13 @@ class VisualStudioCode < Formula
 
     option "with-cn-mirror", "Download from Azure China CDN, use this option if you're in mainland China for a faster downloading speed."
 
-    if MacOS.prefer_64_bit?
-        if build.with? "cn-mirror"
-            url "https://vscode.cdn.azure.cn/stable/dea8705087adb1b5e5ae1d9123278e178656186a/code-stable-1545156735.tar.gz"
-        else
-            url "https://az764295.vo.msecnd.net/stable/dea8705087adb1b5e5ae1d9123278e178656186a/code-stable-1545156735.tar.gz"
-        end
-
-        sha256 "8ac8f4149c555def050bedcf32d0a260af6597925d6e8dd69cabb0f40d9be740"
+    if build.with? "cn-mirror"
+        url "https://vscode.cdn.azure.cn/stable/dea8705087adb1b5e5ae1d9123278e178656186a/code-stable-1545156735.tar.gz"
     else
-        if build.with? "cn-mirror"
-            url "https://vscode.cdn.azure.cn/stable/dea8705087adb1b5e5ae1d9123278e178656186a/code-stable-1545156555.tar.gz"
-        else
-            url "https://az764295.vo.msecnd.net/stable/dea8705087adb1b5e5ae1d9123278e178656186a/code-stable-1545156555.tar.gz"
-        end
-
-        sha256 "2b01605044ec3b7561505cb782ca214f55fed96e133851e91a856aeef09b4df5"
+        url "https://az764295.vo.msecnd.net/stable/dea8705087adb1b5e5ae1d9123278e178656186a/code-stable-1545156735.tar.gz"
     end
+
+    sha256 "8ac8f4149c555def050bedcf32d0a260af6597925d6e8dd69cabb0f40d9be740"
 
     bottle :unneeded
 

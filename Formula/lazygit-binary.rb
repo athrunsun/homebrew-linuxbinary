@@ -3,13 +3,8 @@ class LazygitBinary < Formula
     homepage "https://github.com/jesseduffield/lazygit"
     version "0.2.1"
 
-    if MacOS.prefer_64_bit?
-        url "https://github.com/jesseduffield/lazygit/releases/download/v#{version}/lazygit_#{version}_Linux_x86_64.tar.gz"
-        sha256 "c227678e926dd4f4c3de324d203b57e8a9880e4b9aed21946b54410e97e82270"
-    else
-        url "https://github.com/jesseduffield/lazygit/releases/download/v#{version}/lazygit_#{version}_Linux_32-bit.tar.gz"
-        sha256 "22a24b790a51fa89e18f35d20e9d539b65389c0b4b2b783e440dfa319e10199d"
-    end
+    url "https://github.com/jesseduffield/lazygit/releases/download/v#{version}/lazygit_#{version}_Linux_x86_64.tar.gz"
+    sha256 "c227678e926dd4f4c3de324d203b57e8a9880e4b9aed21946b54410e97e82270"
 
     bottle :unneeded
 

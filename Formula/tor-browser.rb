@@ -3,13 +3,8 @@ class TorBrowser < Formula
   homepage "https://www.torproject.org/projects/torbrowser.html.en"
   version "7.0.10"
 
-  if MacOS.prefer_64_bit?
-    url "https://www.torproject.org/dist/torbrowser/#{version}/tor-browser-linux64-#{version}_en-US.tar.xz"
-    sha256 "10eebffe22594d336441ed59e5edc97ba1d296eb7d94bca3ff94ebfac2da3e34"
-  else
-    url "https://www.torproject.org/dist/torbrowser/#{version}/tor-browser-linux32-#{version}_en-US.tar.xz"
-    sha256 "e5a6e61e60d96c20fcc8a2285aacba10f72aeb84ba1cf4a186a1ae6bce475c56"
-  end
+  url "https://www.torproject.org/dist/torbrowser/#{version}/tor-browser-linux64-#{version}_en-US.tar.xz"
+  sha256 "10eebffe22594d336441ed59e5edc97ba1d296eb7d94bca3ff94ebfac2da3e34"
 
   bottle :unneeded
 

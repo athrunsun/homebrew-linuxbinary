@@ -3,13 +3,8 @@ class GoProxy < Formula
     homepage "https://github.com/snail007/goproxy"
     version "6.5"
 
-    if MacOS.prefer_64_bit?
-        url "https://github.com/snail007/goproxy/releases/download/v#{version}/proxy-linux-amd64.tar.gz"
-        sha256 "9eb69bbf2f85bef1eebe9bb0988cc8dd88c04cf822fa5783cd0cb74cd157a3a6"
-    else
-        url "https://github.com/snail007/goproxy/releases/download/v#{version}/proxy-linux-386.tar.gz"
-        sha256 "8edf852556ed0e33a5f9c29439a2dba656c613735df3681ced3f8b400d048005"
-    end
+    url "https://github.com/snail007/goproxy/releases/download/v#{version}/proxy-linux-amd64.tar.gz"
+    sha256 "9eb69bbf2f85bef1eebe9bb0988cc8dd88c04cf822fa5783cd0cb74cd157a3a6"
 
     bottle :unneeded
 
