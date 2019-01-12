@@ -9,7 +9,7 @@ class ShadowsocksGoServerBinary < Formula
     bottle :unneeded
 
     def install
-        libexec.install Dir["*"]\
-        bin.install("#{libexec}/shadowsocks-server-linux64-#{version}" => "ssgo_server")\
+        libexec.install Dir["*"]
+        bin.install("#{libexec}/shadowsocks-server-linux64-#{version}" => "ssgo_server")
     end
 end
