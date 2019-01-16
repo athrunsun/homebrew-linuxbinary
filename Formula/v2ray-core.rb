@@ -19,6 +19,8 @@ class V2rayCore < Formula
         libexec.install Dir["*"]
         bin.install_symlink("#{libexec}/v2ray")
         bin.install_symlink("#{libexec}/v2ctl")
+        chmod(0755, "#{libexec}/v2ray")
+        chmod(0755, "#{libexec}/v2ctl")
         bin.install_symlink("#{libexec}/geoip.dat")
         bin.install_symlink("#{libexec}/geosite.dat")
     end
