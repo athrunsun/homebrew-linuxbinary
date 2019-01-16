@@ -1,7 +1,7 @@
 class TelegramDesktop < Formula
     desc "Telegram, a new era of messaging."
     homepage "https://github.com/telegramdesktop/tdesktop"
-    version "1.4.3"
+    version "1.5.4"
 
     option "with-github", "Download installation file from github."
 
@@ -11,7 +11,7 @@ class TelegramDesktop < Formula
         url "https://updates.tdesktop.com/tlinux/tsetup.#{version}.tar.xz"
     end
 
-    sha256 "c839297d9559cc54ee9e5054c4e997f86384b3f0e603c38b7708af686894a8fc"
+    sha256 "c85e0b87b754e8c5088803f0af4fa0af2b3567f5594bbb2d91ee1506ac7849cc"
 
     bottle :unneeded
 
