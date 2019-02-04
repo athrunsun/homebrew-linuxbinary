@@ -1,10 +1,10 @@
 class AnnieBinary < Formula
     desc "A fast, simple and clean video downloader."
     homepage "https://github.com/iawia002/annie"
-    version "0.8.2"
+    version "0.9.1"
 
     url "https://github.com/iawia002/annie/releases/download/#{version}/annie_#{version}_Linux_64-bit.tar.gz"
-    sha256 "d8d2d3ab9e4c461df9344267f804840cd8570ec10df4afdc6303790b5c6e0df3"
+    sha256 "79e928dd226780637908763d3cf41f5fe4bad386210ea4e830c83539e26536b3"
 
     bottle :unneeded
     conflicts_with "annie"
