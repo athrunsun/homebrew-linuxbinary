@@ -1,9 +1,9 @@
 class Clion < Formula
     desc "A cross-platform IDE for C and C++"
     homepage "http://www.jetbrains.com/clion/"
-    version "2017.1.3"
+    version "2018.3.4"
     url "https://download.jetbrains.com/cpp/CLion-#{version}.tar.gz"
-    sha256 "efb80d5c66db367b6d576923850c56dbb0054f44e0370a274ef37ae2d69ab710"
+    sha256 "963fb343272e5903ac7dc944cc64ea9541ab4c150cc4ea796dcb0fb613bff4fd"
 
     bottle :unneeded
 
