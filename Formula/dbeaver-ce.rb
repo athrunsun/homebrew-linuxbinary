@@ -1,10 +1,10 @@
 class DbeaverCe < Formula
     desc "Free universal database tool and SQL client."
     homepage "https://github.com/dbeaver/dbeaver"
-    version "5.2.5"
+    version "6.0.0"
 
     url "https://github.com/dbeaver/dbeaver/releases/download/#{version}/dbeaver-ce-#{version}-linux.gtk.x86_64.tar.gz"
-    sha256 "b581a8348d587577f58671ff6cf467a83114a2c3f03412474f11e625b07c4f76"
+    sha256 "b9b722ab0c5ac6099092c43a04426e84bd9b857e646a1f7fe987fb09efdeffec"
 
     bottle :unneeded
 
