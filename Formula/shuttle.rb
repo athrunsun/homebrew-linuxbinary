@@ -11,7 +11,15 @@ class Shuttle < Formula
     def install
         libexec.install Dir["*"]
         bin.install_symlink("#{libexec}/shuttle" => "shuttle")
-        bin.install_symlink("#{libexec}/start.sh" => "start_shuttle")
+
+        (libexec/"start_shuttle").write <<~EOS
+            #!/usr/bin/env bash
+            cd $(brew --prefix shuttle)/libexec
+            ./start.sh
+        EOS
+
+        chmod(0755, "#{libexec}/start_shuttle")
+        bin.install_symlink("#{libexec}/start_shuttle" => "start_shuttle")
     end
 
     def caveats; <<~EOS
