@@ -14,7 +14,7 @@ class Vscodium < Formula
     end
 
     def caveats; <<~EOS
-        Executable is linked as "vscodium".
+        Executable is linked as "vscodium" and "vsc".
         EOS
     end
 end
