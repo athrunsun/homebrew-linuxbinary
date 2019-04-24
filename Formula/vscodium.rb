@@ -11,6 +11,7 @@ class Vscodium < Formula
     def install
         libexec.install Dir["*"]
         bin.install_symlink("#{libexec}/bin/vscodium")
+        bin.install_symlink("#{libexec}/bin/vsc")
     end
 
     def caveats; <<~EOS
