@@ -1,10 +1,10 @@
 class Discord < Formula
   desc "All-in-one voice and text chat for gamers that's free & secure"
   homepage "https://discordapp.com/"
-  version "0.0.5"
+  version "0.0.9"
 
   url "https://dl.discordapp.net/apps/linux/#{version}/discord-#{version}.tar.gz"
-  sha256 "2f4464bcea532673ca7b314dc2a1b7966f5d175e535a0254753f778dc559ef18"
+  sha256 "4e5b955768cb35c0d1564e3bfb174470efc97028a1c38046770266105a440ec4"
 
   bottle :unneeded
 
