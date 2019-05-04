@@ -1,6 +1,6 @@
-class VisualStudioCodeInsiders < Formula
+class VscodeInsiders < Formula
     desc "VS Code is a new type of tool that combines the simplicity of a code editor with what developers need for their core edit-build-debug cycle. This is the insiders version."
-    homepage "https://code.visualstudio.com/"
+    homepage "https://code.visualstudio.com"
     version "1.18.0"
 
     url "https://az764295.vo.msecnd.net/insider/8bc02c7443305a0db442c11b76e67d6f4929dc0e/code-insider-#{version}-1508995529_amd64.tar.gz"
