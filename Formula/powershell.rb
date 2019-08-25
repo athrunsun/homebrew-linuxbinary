@@ -4,7 +4,7 @@ class Powershell < Formula
     version "6.2.2"
 
     url "https://github.com/PowerShell/PowerShell/releases/download/v#{version}/powershell-#{version}-linux-x64.tar.gz"
-    sha256 "7C98B4471B13FE358A4DF51E7E9315746CFCAD9C557823D63772873796C192E5"
+    sha256 "7c98b4471b13fe358a4df51e7e9315746cfcad9c557823d63772873796c192e5"
 
     bottle :unneeded
 
