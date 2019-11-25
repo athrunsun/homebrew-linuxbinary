@@ -1,7 +1,7 @@
 class Atom < Formula
     desc "A hackable text editor for the 21st Century."
-    homepage "https://github.com/atom/atom, https://atom.io/"
-    version "1.27.2"
+    homepage "https://github.com/atom/atom"
+    version "1.41.0"
 
     option "with-taobao-mirror", "Download tarball from https://npm.taobao.org/mirrors/atom/, use this option if you're in mainland China for a faster downloading speed."
 
@@ -11,18 +11,18 @@ class Atom < Formula
         url "https://github.com/atom/atom/releases/download/v#{version}/atom-amd64.tar.gz"
     end
 
-    sha256 "1288171ef2f5b11704fbb179e9482e8b98d162d9b43ef865e10abac9528730c2"
+    sha256 "7f08e95d5b26e8608f351f725a09f8cb8b43935d111c32ea7ea5f92915ee3f9e"
 
     bottle :unneeded
 
     def install
         libexec.install Dir["*"]
         bin.install_symlink("#{libexec}/atom" => "atom")
+        bin.install_symlink("#{libexec}/resources/app/apm/bin/apm" => "apm")
     end
 
     def caveats; <<~EOS
-        Executable is linked as "atom".
-        NOTE that this doesn NOT include "apm".
+        Executable is linked as "atom" and "apm".
         EOS
     end
 end
