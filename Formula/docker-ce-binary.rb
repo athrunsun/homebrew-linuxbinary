@@ -11,7 +11,7 @@ class DockerCeBinary < Formula
         url "https://download.docker.com/linux/static/stable/x86_64/docker-#{version}.tgz"
     end
 
-    sha256 "50CDF38749642EC43D6AC50F4A3F1F7F6AC688E8D8B4E1C5B7BE06E1A82F06E9"
+    sha256 "50cdf38749642ec43d6ac50f4a3f1f7f6ac688e8d8b4e1c5b7be06e1a82f06e9"
 
     bottle :unneeded
     conflicts_with "docker", :because => "both install `docker` binaries"
