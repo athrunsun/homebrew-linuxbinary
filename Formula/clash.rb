@@ -10,11 +10,16 @@ class Clash < Formula
 
     def install
         libexec.install Dir["*"]
+        chmod(0755, "#{libexec}/clash-linux-amd64")
         bin.install_symlink("#{libexec}/clash-linux-amd64" => "clash")
     end
 
     def caveats; <<~EOS
         Executable is linked as "clash".
         EOS
+    end
+
+    test do
+        system "#{bin}/clash", "-v"
     end
 end
