@@ -1,10 +1,10 @@
 class JuliaBinary < Formula
   desc "The Julia programming language"
   homepage "https://julialang.org"
-  version "0.6.1"
+  version "1.5"
 
-  url "https://julialang-s3.julialang.org/bin/linux/x64/0.6/julia-0.6.1-linux-x86_64.tar.gz"
-  sha256 "d73f988b4d5889b30063f40c2f9ad4a2487f0ea87d6aa0b8ed53e789782bb323"
+  url "https://mirrors.bfsu.edu.cn/julia-releases/bin/linux/x64/1.5/julia-1.5-latest-linux-x86_64.tar.gz"
+  sha256 "A4EA36AA86269116992393067E5AFC182707CB4F26EAC9FDDDA08E04A9C7B94D"
 
   bottle :unneeded
 
