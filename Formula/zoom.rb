@@ -8,14 +8,13 @@ class Zoom < Formula
 
     bottle :unneeded
 
-    depends_on "qt"
-
     def install
         libexec.install Dir["*"]
         (libexec/"zoom_brew_exec").write <<~EOS
             #!/usr/bin/env bash
-            cd $(brew --prefix zoom)/libexec
-            ./zoom
+            ZOOM_PATH=$(brew --prefix zoom)/libexec
+            cd $ZOOM_PATH
+            LD_LIBRARY_PATH=$ZOOM_PATH ./zoom
         EOS
         chmod(0755, "#{libexec}/zoom_brew_exec")
         bin.install_symlink("#{libexec}/zoom_brew_exec" => "zoom")
