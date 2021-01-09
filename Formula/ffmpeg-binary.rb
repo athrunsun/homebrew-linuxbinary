@@ -9,11 +9,6 @@ class FfmpegBinary < Formula
     bottle :unneeded
     conflicts_with "ffmpeg"
 
-    devel do
-        url "https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-64bit-static.tar.xz"
-        sha256 "49b4d18ad85bfb05c827c3ca1bef5a9c2b5db890f137a09a8582e11224fc6b2a"
-    end
-
     def install
         libexec.install Dir["*"]
         bin.install_symlink("#{libexec}/ffmpeg")

@@ -6,7 +6,7 @@ class Freenet < Formula
 
   bottle :unneeded
 
-  depends_on :java => "1.7+"
+  depends_on "openjdk"
 
   def install
     (buildpath/"__FreeNetinstall__").write "INSTALL_PATH=#{libexec}"
