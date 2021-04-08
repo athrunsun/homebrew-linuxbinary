@@ -1,10 +1,10 @@
 class Zoom < Formula
     desc "Video Conferencing, Web Conferencing, Webinars, Screen Sharing"
     homepage "https://zoom.us"
-    version "5.2.440215.0803"
+    version "5.6.13632.0328"
 
     url "https://zoom.us/client/latest/zoom_x86_64.tar.xz"
-    sha256 "f85e70bb5c1cbb0ee485000e1f2bfa3c89acbe15fa51865f9f8b91f8054841bc"
+    sha256 "7ed3b1610f80118649a93bddb017c954c9aa083c787cee9564cbb0cdf8f2c200"
 
     bottle :unneeded
 
@@ -26,3 +26,4 @@ class Zoom < Formula
         EOS
     end
 end
+
