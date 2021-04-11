@@ -3,7 +3,7 @@ class Zoom < Formula
     homepage "https://zoom.us"
     version "5.6.13632.0328"
 
-    url "https://zoom.us/client/latest/zoom_x86_64.tar.xz"
+    url "https://zoom.us/client/#{version}/zoom_x86_64.tar.xz"
     sha256 "7ed3b1610f80118649a93bddb017c954c9aa083c787cee9564cbb0cdf8f2c200"
 
     bottle :unneeded
