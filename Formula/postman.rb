@@ -1,10 +1,10 @@
 class Postman < Formula
     desc "Postman helps you develop APIs faster."
     homepage "https://www.getpostman.com"
-    version "6.7.3"
+    version "8.10.0"
 
     url "https://dl.pstmn.io/download/version/#{version}/linux64"
-    sha256 "cf413136c5de4a3864fc110404dad5ae65306f618ae01ed3f6c88b79c56aee11"
+    sha256 "05f3eaa229483a7e1f698e6e2ea2031d37687de540d4fad05ce677ac216db24d"
 
     bottle :unneeded
 
