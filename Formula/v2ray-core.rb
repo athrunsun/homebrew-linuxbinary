@@ -1,10 +1,10 @@
 class V2rayCore < Formula
     desc "A platform for building proxies to bypass network restrictions."
-    homepage "https://github.com/v2ray/v2ray-core"
-    version "4.21.3"
+    homepage "https://github.com/v2fly/v2ray-core"
+    version "4.44.0"
 
-    url "https://github.com/v2ray/v2ray-core/releases/download/v#{version}/v2ray-linux-64.zip"
-    sha256 "7db90a290cd945a2c802fd07907dd9b008b9b26b5d057730e4f1d438965b219a"
+    url "https://github.com/v2fly/v2ray-core/releases/download/v#{version}/v2ray-linux-64.zip"
+    sha256 "c6eb1be207fc5d23c9a18ddb0be9adda6d7255251362863d5ba2177a11528e68"
 
     bottle :unneeded
 
