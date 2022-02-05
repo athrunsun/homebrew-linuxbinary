@@ -3,8 +3,13 @@ class V2rayBinary < Formula
     homepage "https://github.com/v2fly/v2ray-core"
     version "4.44.0"
 
-    url "https://github.com/v2fly/v2ray-core/releases/download/v#{version}/v2ray-linux-64.zip"
-    sha256 "c6eb1be207fc5d23c9a18ddb0be9adda6d7255251362863d5ba2177a11528e68"
+    if Hardware::CPU.arm?
+        url "https://github.com/v2fly/v2ray-core/releases/download/v#{version}/v2ray-linux-arm64-v8a.zip"
+        sha256 "6d0a432edf3df179c934656bff2a9a22c2d62f76e232766e47b8158a8d17d401"
+    else
+        url "https://github.com/v2fly/v2ray-core/releases/download/v#{version}/v2ray-linux-64.zip"
+        sha256 "c6eb1be207fc5d23c9a18ddb0be9adda6d7255251362863d5ba2177a11528e68"
+    end
 
     def install
         libexec.install Dir["*"]
