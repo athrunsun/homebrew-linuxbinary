@@ -13,8 +13,6 @@ class TelegramDesktop < Formula
 
     sha256 "a2a77622d205520826d4f585cf68d332d82fed53c4b12f6b6cb36dfbf5ccd5f8"
 
-    bottle :unneeded
-
     def install
         libexec.install Dir["*"]
         bin.install_symlink("#{libexec}/Telegram" => "telegram")
