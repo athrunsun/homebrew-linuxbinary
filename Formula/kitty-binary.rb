@@ -1,12 +1,10 @@
 class KittyBinary < Formula
     desc "A cross-platform, fast, feature full, GPU based terminal emulator"
     homepage "https://github.com/kovidgoyal/kitty"
-    version "0.19.3"
+    version "0.24.4"
 
     url "https://github.com/kovidgoyal/kitty/releases/download/v#{version}/kitty-#{version}-x86_64.txz"
-    sha256 "4af173890f9c6a98a233e5e4c95a1ea53bfa800c43684c379ef79d3adfeb79eb"
-
-    bottle :unneeded
+    sha256 "70ac4f0c22fc39b4c8e8bb50054cd37638aa48f0fdeaae8016a864693fb71663"
 
     def install
         libexec.install Dir["*"]
