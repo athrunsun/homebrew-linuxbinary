@@ -6,7 +6,6 @@ class CodeServer < Formula
     url "https://github.com/cdr/code-server/releases/download/#{version}-vsc1.33.1/code-server#{version}-vsc1.33.1-linux-x64.tar.gz"
     sha256 "3c266d496f30582e906b71d6bc86673787ef52761eedca08445518502744fea1"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

@@ -6,7 +6,6 @@ class LazydockerBinary < Formula
     url "https://github.com/jesseduffield/lazydocker/releases/download/v#{version}/lazydocker_#{version}_Linux_x86_64.tar.gz"
     sha256 "1c56854f2158f0c5193d7ddfb2396a08296ccac3bfd58db2f67eadbaca794a2d"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

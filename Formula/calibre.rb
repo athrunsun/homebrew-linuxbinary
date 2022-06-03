@@ -6,7 +6,6 @@ class Calibre < Formula
   url "https://github.com/kovidgoyal/calibre/releases/download/v#{version}/calibre-#{version}-x86_64.txz"
   sha256 "37715ef44a75d4ae7cf2fc9a379805837a29b44f1eeacfab853a0b4acd73157a"
 
-  bottle :unneeded
 
   def install
     libexec.install Dir["*"]

@@ -6,7 +6,6 @@ class BaiduPcsGo < Formula
     url "https://github.com/iikira/BaiduPCS-Go/releases/download/v#{version}/BaiduPCS-Go-v#{version}-linux-amd64.zip"
     sha256 "d55a391470789944f019bf757fd02a08a7d63ad88662528209256076c8264fdd"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

@@ -13,7 +13,6 @@ class Atom < Formula
 
     sha256 "7f08e95d5b26e8608f351f725a09f8cb8b43935d111c32ea7ea5f92915ee3f9e"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

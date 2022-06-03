@@ -7,7 +7,6 @@ class Visualvm < Formula
     sha256 "90dfabfcbebe9214c8474c9edd1c36d67426b162ec642cb3527540a191812b93"
 
     conflicts_with "visualvm-multiple-language"
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

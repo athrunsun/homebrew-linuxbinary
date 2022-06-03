@@ -6,7 +6,6 @@ class Betwixt < Formula
     url "https://github.com/kdzwinel/betwixt/releases/download/#{version}/Betwixt-linux-x64.zip"
     sha256 "9fae4a5f68ce43fa22f473d33357bfd3f2a7f235df272ed684522c6a9a117dee"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

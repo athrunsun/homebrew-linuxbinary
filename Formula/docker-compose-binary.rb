@@ -6,7 +6,6 @@ class DockerComposeBinary < Formula
     url "https://github.com/docker/compose/releases/download/#{version}/docker-compose-Linux-x86_64"
     sha256 "c176543737b8aea762022245f0f4d58781d3cb1b072bc14f3f8e5bb96f90f1a2"
 
-    bottle :unneeded
     conflicts_with "docker-compose"
 
     def install

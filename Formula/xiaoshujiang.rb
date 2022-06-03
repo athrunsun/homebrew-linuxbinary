@@ -6,7 +6,6 @@ class Xiaoshujiang < Formula
     url "https://github.com/suziwen/markdownxiaoshujiang/releases/download/v#{version}/Story-writer-linux64.zip"
     sha256 "c11d3ba60b66948954864131ab73ae1d859635ed0a6a055ddf3c788dd440c35e"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

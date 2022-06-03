@@ -6,7 +6,6 @@ class PostgresqlBinary < Formula
     url "http://get.enterprisedb.com/postgresql/postgresql-#{version}-linux-binaries.tar.gz"
     sha256 "4da4eb3c5f0e2baade3ca24241796dbecfe728019238944833793b05fe245e84"
 
-    bottle :unneeded
     conflicts_with "postgresql"
 
     def install

@@ -6,7 +6,6 @@ class MicroBinary < Formula
     url "https://github.com/zyedidia/micro/releases/download/v#{version}/micro-#{version}-linux64.tar.gz"
     sha256 "e7d4c9427f9fdfed78e69d42cf518e93ae15fc8f70b7f0f87d292ed81206e900"
 
-    bottle :unneeded
     conflicts_with "micro"
 
     def install

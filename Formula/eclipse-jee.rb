@@ -6,7 +6,6 @@ class EclipseJee < Formula
     url "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/neon/1a/eclipse-jee-neon-1a-linux-gtk-x86_64.tar.gz&r=1"
     sha256 "edadd11440d94436665ca0435e8e1a371cef3b187e9d85a17be301e1ee1fc807"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

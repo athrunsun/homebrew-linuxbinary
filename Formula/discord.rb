@@ -6,7 +6,6 @@ class Discord < Formula
   url "https://dl.discordapp.net/apps/linux/#{version}/discord-#{version}.tar.gz"
   sha256 "51354a8ecfe2ec2fe6f35e356d706c6a441115dfdcfff126aaa84a864af538e9"
 
-  bottle :unneeded
 
   def install
     libexec.install Dir["*"]

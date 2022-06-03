@@ -6,7 +6,6 @@ class Lantern < Formula
     url "https://github.com/getlantern/lantern/releases/download/#{version}/update_linux_amd64.bz2"
     sha256 "0f8a73f50470aae79f3ca4db4af4974e11ab89780a808261d34cffaabd8a025b"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

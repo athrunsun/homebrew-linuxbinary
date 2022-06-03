@@ -13,7 +13,6 @@ class JuliaBinary < Formula
 
     sha256 "be7af676f8474afce098861275d28a0eb8a4ece3f83a11027e3554dcdecddb91"
 
-  bottle :unneeded
 
   def install
     libexec.install Dir["*"]

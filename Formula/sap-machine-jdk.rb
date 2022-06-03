@@ -6,7 +6,6 @@ class SapMachineJdk < Formula
     url "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.1%2B13-0/sapmachine-jdk-11.0.1.13_linux-x64_bin.tar.gz"
     sha256 "41d70861c71d33ed437d28f3aaa0a22543b83271c35b7910cd8613961dee3d2f"
 
-    bottle :unneeded
 
     conflicts_with "oracle-jdk-lts", :because => "both install java binaries"
     conflicts_with "azul-zulu-jdk", :because => "both install java binaries"

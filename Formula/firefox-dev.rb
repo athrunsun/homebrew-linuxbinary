@@ -7,7 +7,6 @@ class FirefoxDev < Formula
     sha256 "3b4f80760f18a80379a3c6bb2137d5927f0acbe97d463b070c9a19901499f748"
 
     conflicts_with "firefox-dev-zhcn"
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

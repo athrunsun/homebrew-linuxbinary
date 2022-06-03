@@ -6,7 +6,6 @@ class DbeaverCe < Formula
     url "https://github.com/dbeaver/dbeaver/releases/download/#{version}/dbeaver-ce-#{version}-linux.gtk.x86_64.tar.gz"
     sha256 "b9b722ab0c5ac6099092c43a04426e84bd9b857e646a1f7fe987fb09efdeffec"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

@@ -5,7 +5,6 @@ class PycharmCe < Formula
     url "https://download.jetbrains.com/python/pycharm-community-#{version}.tar.gz"
     sha256 "90953ca424bb331348e3575975fab4e189ab126ddc367223e3a7cb01b1563f3b"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

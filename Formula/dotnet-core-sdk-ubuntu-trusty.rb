@@ -6,7 +6,6 @@ class DotnetCoreSdkUbuntuTrusty < Formula
     url "https://download.microsoft.com/download/E/7/8/E782433E-7737-4E6C-BFBF-290A0A81C3D7/dotnet-dev-ubuntu-x64.#{version}.tar.gz"
     sha256 "e3823b9f964d27d1434f0e52b93fb1b6a65e83fb275e01f65ecbe63a4242fbe5"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

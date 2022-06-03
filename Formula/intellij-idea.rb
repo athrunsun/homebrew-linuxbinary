@@ -5,7 +5,6 @@ class IntellijIdea < Formula
     url "https://download.jetbrains.com/idea/ideaIU-#{version}.tar.gz"
     sha256 "3866349090ea295c0ac4f1b77d20c74d8c9647e73e5ad541c61b3dfbfc4ab5f3"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

@@ -6,7 +6,6 @@ class TorBrowser < Formula
   url "https://www.torproject.org/dist/torbrowser/#{version}/tor-browser-linux64-#{version}_en-US.tar.xz"
   sha256 "10eebffe22594d336441ed59e5edc97ba1d296eb7d94bca3ff94ebfac2da3e34"
 
-  bottle :unneeded
 
   def install
     libexec.install Dir["*"]

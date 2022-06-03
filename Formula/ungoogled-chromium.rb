@@ -6,7 +6,6 @@ class UngoogledChromium < Formula
     url "https://github.com/Eloston/ungoogled-chromium-binaries/releases/download/75.0.3770.100-1.2/ungoogled-chromium_75.0.3770.100-1.2_linux.tar.xz"
     sha256 "5ac39f58152844ad2f8b19769a52f83c84544b257a93abc2fdfc3a4bf613f9b8"
 
-    bottle :unneeded
 
     conflicts_with "ungoogled-chromium-appimage", :because => "both install chrome binaries"
 

@@ -13,7 +13,6 @@ class JetbrainsToolbox < Formula
 
     sha256 "bb98b94fa714ca07db31ac5bb42fbba2eac610c360541848e59adf0f8d84cefb"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

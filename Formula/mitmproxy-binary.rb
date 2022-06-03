@@ -6,7 +6,6 @@ class MitmproxyBinary < Formula
     url "https://snapshots.mitmproxy.org/#{version}/mitmproxy-#{version}-linux.tar.gz"
     sha256 "382c675a439afa97338f5971946cd6fc7b1648350dc9af16aac39884efaa6494"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

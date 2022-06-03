@@ -13,7 +13,6 @@ class DockerCeBinary < Formula
 
     sha256 "50cdf38749642ec43d6ac50f4a3f1f7f6ac688e8d8b4e1c5b7be06e1a82f06e9"
 
-    bottle :unneeded
     conflicts_with "docker", :because => "both install `docker` binaries"
 
     def install

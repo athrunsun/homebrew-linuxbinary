@@ -6,7 +6,6 @@ class Dbdeployer < Formula
     url "https://github.com/datacharmer/dbdeployer/releases/download/#{version}/dbdeployer-#{version}.linux.tar.gz"
     sha256 "5065d1e7ee2ff89f2d568bf5075689a640915bb108a3559d82f405d264787d35"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

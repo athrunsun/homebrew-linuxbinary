@@ -6,7 +6,6 @@ class FfmpegBinary < Formula
     url "https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-64bit-static.tar.xz"
     sha256 "b5392ef2ec8909d2fb9d8dbd551ba3d5929511b0f7058f560fe3db13896777ca"
 
-    bottle :unneeded
     conflicts_with "ffmpeg"
 
     def install

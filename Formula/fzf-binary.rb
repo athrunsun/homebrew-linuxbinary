@@ -6,7 +6,6 @@ class FzfBinary < Formula
     url "https://github.com/junegunn/fzf/releases/download/#{version}/fzf-#{version}-linux_amd64.tar.gz"
     sha256 "1794d7f89a7e0a3d5fcb010c042fef097e5cfdf306ef45b532c4ac0e6ce276a1"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

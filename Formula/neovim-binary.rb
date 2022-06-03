@@ -6,7 +6,6 @@ class NeovimBinary < Formula
     url "https://github.com/neovim/neovim/releases/download/v#{version}/nvim-linux64.tar.gz"
     sha256 "cd59e885143e0fa7e43cfdacbc8e37dc033c56d9205b8f8a8acd08cd9f93737d"
 
-    bottle :unneeded
     conflicts_with "neovim"
 
     def install

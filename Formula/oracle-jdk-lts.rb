@@ -10,7 +10,6 @@ class OracleJdkLts < Formula
 
     sha256 "e7fd856bacad04b6dbf3606094b6a81fa9930d6dbb044bbd787be7ea93abc885"
 
-    bottle :unneeded
 
     conflicts_with "azul-zulu-jdk", :because => "both install java binaries"
     conflicts_with "sap-machine-jdk", :because => "both install java binaries"

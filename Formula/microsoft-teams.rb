@@ -8,7 +8,6 @@ class MicrosoftTeams < Formula
   sha256 "9b7b14e65b18f9d0396d2367999d67cd0a87412169407e7350e2b463a9f9ef5d"
   head "https://github.com/ivelkov/teams-for-linux.git"
 
-  bottle :unneeded
 
   def install
     libexec.install Dir["*"]

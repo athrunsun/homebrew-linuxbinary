@@ -7,7 +7,6 @@ class GroupMe < Formula
 
   sha256 "85e79de8cb36048bdb421d6c8b45d07ad5326fc51b1ae05d4bbfff52f8a9c594"
 
-  bottle :unneeded
 
   def install
     libexec.install Dir["*"]

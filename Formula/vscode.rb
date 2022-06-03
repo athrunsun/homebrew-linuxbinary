@@ -6,7 +6,6 @@ class Vscode < Formula
     url "https://vscode-update.azurewebsites.net/#{version}/linux-x64/stable"
     sha256 "fbf31a814755c54ff744a5da77b5652aa6963a1c3a365a6399cc65ef30935152"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

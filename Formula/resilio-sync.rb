@@ -6,7 +6,6 @@ class ResilioSync < Formula
     url "https://download-cdn.resilio.com/stable/linux-x64/resilio-sync_x64.tar.gz"
     sha256 "baedc5f316705bd2f74097776eba6b4d9f4ba02531353c2a3d4938e18d05815a"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]
