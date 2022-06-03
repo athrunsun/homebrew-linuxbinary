@@ -6,7 +6,6 @@ class DotnetCoreSdkUbuntuXenial < Formula
     url "https://download.microsoft.com/download/E/7/8/E782433E-7737-4E6C-BFBF-290A0A81C3D7/dotnet-dev-ubuntu.16.04-x64.#{version}.tar.gz"
     sha256 "6fb4ec609b00bd65881f864249741d6486ba19da5b76cfcb60d03df8799b6ab7"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

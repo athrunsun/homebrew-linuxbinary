@@ -6,7 +6,6 @@ class AmazonCorrettoAT8 < Formula
     url "https://d2znqt9b1bc64u.cloudfront.net/amazon-corretto-#{version}-linux-x64.tar.gz"
     sha256 "c19a928687479e1036ff1d6e023975402d2f027d9b3e4d64cfaf0c9f35bf9669"
 
-    bottle :unneeded
 
     conflicts_with "azul-zulu-jdk", :because => "both install java binaries"
     conflicts_with "sap-machine-jdk", :because => "both install java binaries"

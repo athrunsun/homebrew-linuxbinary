@@ -5,7 +5,6 @@ class Clion < Formula
     url "https://download.jetbrains.com/cpp/CLion-#{version}.tar.gz"
     sha256 "963fb343272e5903ac7dc944cc64ea9541ab4c150cc4ea796dcb0fb613bff4fd"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

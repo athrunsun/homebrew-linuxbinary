@@ -6,7 +6,6 @@ class PackerBinary < Formula
     url "https://releases.hashicorp.com/packer/#{version}/packer_#{version}_linux_amd64.zip"
     sha256 "035d0ea1fe785ab6b673bc2a79399125d4014f29151e106635fa818bb726bebf"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

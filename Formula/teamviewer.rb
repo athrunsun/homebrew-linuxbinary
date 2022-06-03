@@ -6,7 +6,6 @@ class Teamviewer < Formula
     url "https://download.teamviewer.com/download/teamviewer_i386.tar.xz"
     sha256 "6a0a35881f4b74bccfb90b721dbb60944a78b2db5a56d08693182b1a8ebd6d9d"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

@@ -6,7 +6,6 @@ class Postman < Formula
     url "https://dl.pstmn.io/download/version/#{version}/linux64"
     sha256 "05f3eaa229483a7e1f698e6e2ea2031d37687de540d4fad05ce677ac216db24d"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

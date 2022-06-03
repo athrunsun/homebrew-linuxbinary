@@ -6,7 +6,6 @@ class Terminus < Formula
     url "https://github.com/Eugeny/terminus/releases/download/v1.0.0-alpha.61/terminus-1.0.0-alpha.61-linux.tar.gz"
     sha256 "77af2240afee7f1ed2048a04bb8ddd25b85135662e40660fca4db792886b9974"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

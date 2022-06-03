@@ -6,7 +6,6 @@ class GitLfsBinary < Formula
     url "https://github.com/git-lfs/git-lfs/releases/download/v#{version}/git-lfs-linux-amd64-#{version}.tar.gz"
     sha256 "6755e109a85ffd9a03aacc629ea4ab1cbb8e7d83e41bd1880bf44b41927f4cfe"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

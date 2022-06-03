@@ -6,7 +6,6 @@ class ShadowsocksGoServerBinary < Formula
     url "https://github.com/shadowsocks/shadowsocks-go/releases/download/#{version}/shadowsocks-server-linux64-#{version}.gz"
     sha256 "22495e2e0bb36a6fbe3c8be75943613319d080825d6fdb2c0efeb3507882f90a"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

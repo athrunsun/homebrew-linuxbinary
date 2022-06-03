@@ -5,7 +5,6 @@ class IntellijIdeaNoJdk < Formula
     url "https://download.jetbrains.com/idea/ideaIU-#{version}-no-jdk.tar.gz"
     sha256 "e1f426c24e9a31d016d7225763c926107eff419c99cf81c4b44caf047e38c74a"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

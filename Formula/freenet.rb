@@ -4,7 +4,6 @@ class Freenet < Formula
   url "https://github.com/freenet/fred/releases/download/build01479/new_installer_offline_1479.jar"
   sha256 "b630cc310987cd225d5250061abb0e72bc19c5ae3b0870c73a979cafea872760"
 
-  bottle :unneeded
 
   depends_on "openjdk"
 

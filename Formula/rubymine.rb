@@ -5,7 +5,6 @@ class Rubymine < Formula
     url "https://download.jetbrains.com/ruby/RubyMine-#{version}.tar.gz"
     sha256 "1f991efdda770d5e267d70bc6f547bb2417d485533940888c88f304bad02531a"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

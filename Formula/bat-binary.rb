@@ -6,7 +6,6 @@ class BatBinary < Formula
     url "https://github.com/astaxie/bat/releases/download/v#{version}/bat_#{version}_linux_amd64.tar.gz"
     sha256 "4cc9c8e01524caf41b94f3159f95734cf1e5874521308f4708e3d535397be800"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

@@ -7,7 +7,6 @@ class FirefoxEsr < Formula
     sha256 "234a8debdbdb3a715708aa2d4f9844811e7b416a442d072dcc28867442a066f3"
 
     conflicts_with "firefox-esr-zhcn"
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

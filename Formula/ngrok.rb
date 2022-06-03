@@ -6,7 +6,6 @@ class Ngrok < Formula
   url "https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-#{version}-linux-amd64.zip"
   sha256 "1761f150c5e1d210e8148a863441af4bf0f0ae413d205fdb3ce9db4a3454d504"
 
-  bottle :unneeded
 
   def install
     libexec.install Dir["*"]

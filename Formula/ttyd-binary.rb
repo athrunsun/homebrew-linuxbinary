@@ -6,7 +6,6 @@ class TtydBinary < Formula
     url "https://github.com/tsl0922/ttyd/releases/download/#{version}/ttyd_linux.x86_64"
     sha256 "c83cae84f3ea57678649a67f0d0fe6d185460d78204278282f3a09323929c052"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

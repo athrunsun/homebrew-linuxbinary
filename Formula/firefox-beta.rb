@@ -7,7 +7,6 @@ class FirefoxBeta < Formula
     sha256 "0a649eef8e7075660ccf2c571c1c1989782b3384f732970a727115586d5833f5"
 
     conflicts_with "firefox-beta-zhcn"
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

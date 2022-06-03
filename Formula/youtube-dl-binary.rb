@@ -4,7 +4,6 @@ class YoutubeDlBinary < Formula
     version "2018.06.19"
     url "https://yt-dl.org/downloads/#{version}/youtube-dl-#{version}.tar.gz"
     sha256 "e68ff7b344d24ecc7714b6c91ddbb833c438ac3e654d9f8fbdb29e4c10ab427b"
-    bottle :unneeded
     conflicts_with "youtube-dl"
 
     def install

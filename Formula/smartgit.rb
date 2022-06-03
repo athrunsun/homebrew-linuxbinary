@@ -5,7 +5,6 @@ class Smartgit < Formula
     url "https://www.syntevo.com/downloads/smartgit/smartgit-linux-18_1_3.tar.gz"
     sha256 "ad12334c7608c9bcd515551caaf8711a4ebb090903b8874afdaccd9d36da74e7"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

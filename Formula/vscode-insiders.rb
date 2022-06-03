@@ -6,7 +6,6 @@ class VscodeInsiders < Formula
     url "https://vscode-update.azurewebsites.net/#{version}/linux-x64/insider"
     sha256 "a3f2716151d0ef38809afad7f06700885d397c619a0789509ab58664d2d4cca8"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

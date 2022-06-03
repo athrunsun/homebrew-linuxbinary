@@ -13,7 +13,6 @@ class Nwjs < Formula
         sha256 "031c0a5418e81dd1e16f861327fbfd2227a6411d4b5508d577963081d17dd889"
     end
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

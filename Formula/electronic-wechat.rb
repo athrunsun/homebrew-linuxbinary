@@ -5,7 +5,6 @@ class ElectronicWechat < Formula
     url "https://github.com/geeeeeeeeek/electronic-wechat/releases/download/V#{version}/linux-x64.tar.gz"
     sha256 "e4922c16c8a283597698ffdd827347398cee80cb93580b8b3aa8d618e03b355c"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

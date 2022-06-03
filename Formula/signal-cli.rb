@@ -6,7 +6,6 @@ class SignalCli < Formula
     url "https://github.com/AsamK/signal-cli/releases/download/v#{version}/signal-cli-#{version}.tar.gz"
     sha256 "38008a01328e01056cea5470c2e61a2cacbfe5e98d711a9d4d99f5a0c0c13385"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

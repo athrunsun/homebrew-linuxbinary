@@ -6,7 +6,6 @@ class AndroidCliTools < Formula
     url "https://dl.google.com/android/repository/sdk-tools-linux-#{version}.zip"
     sha256 "92ffee5a1d98d856634e8b71132e8a95d96c83a63fde1099be3d86df3106def9"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

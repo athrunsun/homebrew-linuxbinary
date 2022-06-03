@@ -5,7 +5,6 @@ class ElectronicQq < Formula
     url "https://github.com/arthurkiller/electronic-QQ/releases/download/v#{version}/electronic-QQ-linux-x64.tar.gz"
     sha256 "400a9d92af29222f614c1313dbafa0325b9c011a4eb97ea09b3ccbe3903559ac"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

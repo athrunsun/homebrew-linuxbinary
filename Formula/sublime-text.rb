@@ -6,7 +6,6 @@ class SublimeText < Formula
     url "https://download.sublimetext.com/sublime_text_3_build_#{version}_x64.tar.bz2"
     sha256 "acb64f1de024a0f004888096afa101051e48d96c7a3e7fe96e11312d524938c4"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

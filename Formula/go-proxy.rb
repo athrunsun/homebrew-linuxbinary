@@ -6,7 +6,6 @@ class GoProxy < Formula
     url "https://github.com/snail007/goproxy/releases/download/v#{version}/proxy-linux-amd64.tar.gz"
     sha256 "ee792dc9851f670da08225c8cb2749720708bd5eebab3a73fdc66708e5dd5efe"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

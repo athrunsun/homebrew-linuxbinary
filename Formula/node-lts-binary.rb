@@ -13,7 +13,6 @@ class NodeLtsBinary < Formula
 
     sha256 "e92b91fa473f9ad805a1241907b6f1bd3f8ceac8426a8b4cb05428e62e243bdd"
 
-    bottle :unneeded
     conflicts_with "node", "node-binary"
 
     def install

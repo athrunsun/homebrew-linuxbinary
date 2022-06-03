@@ -6,7 +6,6 @@ class FxBinary < Formula
     url "https://github.com/antonmedv/fx/releases/download/#{version}/fx-linux"
     sha256 "7c2632ed00aebd70d44e3a7c0bf1e360ca8d7520f4cd37fbd46002a312708137"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

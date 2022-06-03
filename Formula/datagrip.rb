@@ -5,7 +5,6 @@ class Datagrip < Formula
     url "https://download.jetbrains.com/datagrip/datagrip-#{version}.tar.gz"
     sha256 "966b02edc6a65b0d6f36a7d00805bfd021cfb1a82f3e76f99facbcc45d311ed1"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

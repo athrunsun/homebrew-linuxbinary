@@ -5,7 +5,6 @@ class Oni < Formula
     url "https://github.com/onivim/oni/releases/download/v#{version}/Oni-#{version}-x64-linux.tar.gz"
     sha256 "ede7c765a76716d500b7eb9a401b631aadb83a23227526108201f4b43ad9c9a3"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

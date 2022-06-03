@@ -6,7 +6,6 @@ class GoTun2socks < Formula
     url "https://github.com/eycorsican/go-tun2socks/releases/download/v#{version}/tun2socks-linux-amd64.zip"
     sha256 "0ff181a36997ae7ea4d0c5b1513f6cf64dfad58b20f10cd50081187227694986"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]

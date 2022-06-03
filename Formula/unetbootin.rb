@@ -6,7 +6,6 @@ class Unetbootin < Formula
     url "https://launchpad.net/unetbootin/trunk/#{version}/+download/unetbootin-linux64-#{version}.bin"
     sha256 "845e653572dd8589ba5a76fcc1ea8c8c8d238e0e2a32db6a0c56b1f0b6620175"
 
-    bottle :unneeded
 
     def install
         prefix.install Dir["*"]

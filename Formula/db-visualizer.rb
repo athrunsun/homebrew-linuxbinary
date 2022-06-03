@@ -6,7 +6,6 @@ class DbVisualizer < Formula
     url "https://www.dbvis.com/product_download/dbvis-#{version}/media/dbvis_unix_9_5_7.tar.gz"
     sha256 "d95b3aeb3d8de29c238cd60b0d8cbc2294ab68a172a37ff6764e44c90e7764f7"
 
-    bottle :unneeded
 
     def install
         libexec.install Dir["*"]
