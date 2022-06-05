@@ -19,13 +19,13 @@ class ClashPremiumBinary < Formula
 
     def install
         libexec.install Dir["*"]
-        mv("#{libexec}/clash-#{@@os}-#{@@arch}", "#{libexec}/clash")
-        chmod(0755, "#{libexec}/clash")
-        bin.install_symlink("#{libexec}/clash" => "clash")
+        mv("#{libexec}/clash-#{@@os}-#{@@arch}", "#{libexec}/clash-premium")
+        chmod(0755, "#{libexec}/clash-premium")
+        bin.install_symlink("#{libexec}/clash-premium" => "clash-premium")
     end
 
     def caveats; <<~EOS
-        Executable is linked as "clash".
+        Executable is linked as "clash-premium".
         EOS
     end
 
