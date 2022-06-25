@@ -1,10 +1,10 @@
 class Zoom < Formula
     desc "Video Conferencing, Web Conferencing, Webinars, Screen Sharing"
     homepage "https://zoom.us"
-    version "5.9.6.2225"
+    version "5.11.0.3540"
 
     url "https://zoom.us/client/#{version}/zoom_x86_64.tar.xz"
-    sha256 "0af655c5935a887f68a33968c3c54dcf4e8e530f95ea18b0ff2f254c49b18dcc"
+    sha256 "b7b812f151ab303a2ca1cff581c29298fde36c1664855221e4f511ae228fe502"
 
     def install
         libexec.install Dir["*"]
