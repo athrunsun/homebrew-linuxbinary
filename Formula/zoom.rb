@@ -19,7 +19,7 @@ class Zoom < Formula
     end
 
     def caveats; <<~EOS
-        You might need to install some dependencies like 'libxcb-xtest0'.
+        You may need to install some dependencies like 'libxcb-xtest0'.
         Executable linked as "zoom".
         EOS
     end
