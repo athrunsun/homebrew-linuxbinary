@@ -4,7 +4,7 @@ class HttpieGo < Formula
     version "0.7.0"
 
     url "https://github.com/nojima/httpie-go/releases/download/v#{version}/httpie-go_linux_amd64"
-    sha256 "a527fc55a4b19d6a84154ff91047c22cd9efc217fd12e7422007e1c2daa320c4"
+    sha256 "8dbc2ec159dbb6b75922ef4553b9ff56d6cd84a2f4124c75180096311dc52192"
 
     def install
         libexec.install Dir["*"]
