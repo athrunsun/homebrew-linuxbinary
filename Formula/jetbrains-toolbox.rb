@@ -1,7 +1,7 @@
 class JetbrainsToolbox < Formula
     desc "A control panel for your tools and projects."
     homepage "https://www.jetbrains.com/toolbox/app/"
-    version "1.8.3678"
+    version "1.26.1.13138
 
     option "with-no-cdn", "Download from https://download-cf.jetbrains.com directly. Use this if CDN's version is behind, which will cause a hash mismatch."
 
