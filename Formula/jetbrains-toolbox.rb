@@ -11,7 +11,7 @@ class JetbrainsToolbox < Formula
         url "https://download.jetbrains.com/toolbox/jetbrains-toolbox-#{version}.tar.gz"
     end
 
-    sha256 "bb98b94fa714ca07db31ac5bb42fbba2eac610c360541848e59adf0f8d84cefb"
+    sha256 "97f519122d9522a1b240cbecfde07039b553986ae5554495be60ca6237adb580"
 
 
     def install

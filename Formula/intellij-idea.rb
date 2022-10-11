@@ -3,7 +3,7 @@ class IntellijIdea < Formula
     homepage "http://www.jetbrains.com/idea/"
     version "2022.2.3"
     url "https://download.jetbrains.com/idea/ideaIU-#{version}.tar.gz"
-    sha256 "3866349090ea295c0ac4f1b77d20c74d8c9647e73e5ad541c61b3dfbfc4ab5f3"
+    sha256 "e1f9de8173cec9f7166894d66b82b89dee4da9022c05366d192f6112956184b3"
 
 
     def install
