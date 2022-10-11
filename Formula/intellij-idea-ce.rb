@@ -1,9 +1,9 @@
 class IntellijIdeaCe < Formula
     desc "The Most Intelligent Java IDE, community edition."
     homepage "http://www.jetbrains.com/idea/"
-    version "2018.1.4"
+    version "2022.2.3"
     url "https://download.jetbrains.com/idea/ideaIC-#{version}.tar.gz"
-    sha256 "26e674de05976cc7e822d77a2dfe8b8f6136e18f1e91f1c8212019f2781164e1"
+    sha256 "4ba5faafad48d58db5099fae080ae2238086d3d9803080082de8efe35d8bf4ed"
 
 
     def install
